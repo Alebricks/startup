@@ -2,28 +2,26 @@
     display:block;
     margin-left: auto;
     margin-right: auto;
-}
-
-footer{
-    padding-bottom: 75px;
-}
-
-footer img {
-    height: 125px;
-    margin: 5px;
-    background-color: white;
-}
+} 
 
 .footer-carousel {
   width: 100%;
-  /* overflow: hidden;*/ 
+  overflow: hidden;
   /* background: #111; */
   padding: 10px 0;
+  position: relative;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 150px; /* ajusta según el tamaño de tus imágenes */
 }
 
 .carousel-track {
-  display: flex;
-  width: max-content;
+  position: absolute;
+  white-space: nowrap;
   animation: scroll 120s linear infinite;
 }
 
@@ -31,23 +29,15 @@ footer img {
   animation-play-state: paused;
 }
 
-.carousel-slide {
-  display: flex;
-}
-
-.carousel-slide img {
-  /* width: 100px;
-  margin: 0 20px; */
-  /* object-fit: contain; */
+.carousel-track img {
+  display: inline-block;
+  height: 150px;
+  background-color: white;
+  margin: 0 20px;
+  object-fit: contain;
   transition: transform 0.3s ease;
 }
 
-/* Efecto zoom al pasar el mouse sobre la imagen */
-.carousel-slide img:hover {
-  transform: scale(2);
-}
-
-/* Animación */
 @keyframes scroll {
   from {
     transform: translateX(0%);
