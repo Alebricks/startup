@@ -22,7 +22,7 @@
 .carousel-track {
   position: absolute;
   white-space: nowrap;
-  animation: scroll 120s linear infinite;
+  animation: scroll 100s linear infinite;
 }
 
 .footer-carousel:hover .carousel-track {
