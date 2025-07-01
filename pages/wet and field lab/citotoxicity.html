@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citotoxicity - Alebricks</title>
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/general.css" rel="stylesheet">
+</head>
+<body>
+    <div style="background-color: #F8F9FA;">
+        <div class="container"> <!-- NavBar-->
+            <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../../index.html">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../about/members.html"> Members</a></li>
+                                    <li><a class="dropdown-item" href="../about/mission_vision.html">Mission & Vision</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Project
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../project/description.html">Description</a></li>
+                                    <li><a class="dropdown-item" href="../project/roadmap.html">Roadmap</a></li>
+                                    <li><a class="dropdown-item" href="../project/engineering_success.html">Engineering success</a></li>
+                                    <li><a class="dropdown-item" href="../project/business_model.html">Business model</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Safety
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../safety/biosafety.html">Biosafety & Biosecurity</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Wet & Field Lab
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./contribution.html">Contribution</a></li>
+                                    <li><a class="dropdown-item" href="./design.html">Design</a></li>
+                                    <li><a class="dropdown-item" href="./citotoxicity.html">Citotoxicity</a></li>
+                                    <li><a class="dropdown-item" href="./phytotoxicity.html">Phytotoxicity</a></li>
+                                    <li><a class="dropdown-item" href="./field test.html">Field Tests</a></li>
+                                    <li><a class="dropdown-item" href="./notebook.html">Notebook</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dry Lab
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../dry lab/Overview.html">Overview</a></li>
+                                    <li><a class="dropdown-item" href="../dry lab/genome_annotation.html">Genome annotation</a></li>
+                                    <li><a class="dropdown-item" href="../dry lab/differential-expression-analysis.html">Differential expression analysis</a></li>
+                                    <li><a class="dropdown-item" href="../dry lab/docking.html">Docking</a></li>
+                                    <li><a class="dropdown-item" href="../dry lab/alternative-enzymes-selection.html">Alternative enzymes selection</a></li>
+                                    <li><a class="dropdown-item" href="../dry lab/docking-mds.html">Docking and MDS</a></li>
+                                    <li><a class="dropdown-item" href="../dry lab/model.html">Math-Model</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Human Practices
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Human Practices</a></li>
+                                    <li><a class="dropdown-item" href="#">Integrated Human Practices</a></li>
+                                    <li><a class="dropdown-item" href="#">Diversity and Inclusivity</a></li>
+                                    <li><a class="dropdown-item" href="#">Education</a></li>
+                                    <li><a class="dropdown-item" href="#">Philosophy and episthemology</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ARTS & DESIGN
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                    <li><a class="dropdown-item" href="#">Videogame</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    AKNOWLEDGEMENTS
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Attributions</a></li>
+                                    <li><a class="dropdown-item" href="#">Sponsors</a></li>
+                                    <li><a class="dropdown-item" href="#">Crowdfunding</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Sustainable development
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Ecological Niche Modeling</a></li>
+                                    <li><a class="dropdown-item" href="#">SDG's</a></li>
+                                    <li><a class="dropdown-item" href="#">Negative Impact</a></li>
+                                    <li><a class="dropdown-item" href="#">Why to protect maize?</a></li>
+                                    <li><a class="dropdown-item" href="#">Climaton</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div> <!-- End Container NavBar-->
+
+    <div class="container my-5"> <!-- Body -->
+        <h1 class="text-center my-4 pt-5">Citotoxicity</h1>
+        <div id="introduction" class="my-5">
+            <section id="introduction-section" class="my-5">
+                <h2>Introduction</h2>
+                <p>The increasing demand for environmentally friendly and sustainable agricultural practices has intensified
+                    interest in natural compounds with biopesticidal properties. Piperamides, naturally occurring alkaloids
+                    found in black pepper (<em>Piper nigrum</em>), have emerged as promising candidates due to their
+                    demonstrated insecticidal, antifungal, and antimicrobial activities. These properties make piperamides
+                    attractive for use as biopesticides in integrated pest management (IPM) strategies, which aim to reduce
+                    reliance on synthetic chemicals and minimize environmental impact.</p>
+                <p>To meet the growing need for such natural bioactive compounds, biotechnological production of piperamides
+                    using microbial systems has become a focal point of research. <em>Saccharomyces cerevisiae</em>, a
+                    well-characterized model organism for metabolic engineering, is an ideal host for the biosynthesis of
+                    piperamides. In this engineered pathway, ferulic acid serves as a critical intermediate metabolite. Although
+                    ferulic acid has its own bioactive properties, its primary role in this context is to serve as a precursor
+                    in the piperamide biosynthetic route. However, one of the key challenges in scaling up piperamide production
+                    in microbial systems is understanding the cytotoxic effects of both piperamides and ferulic acid on <em>S.
+                        cerevisiae</em> cells.</p>
+                <p>High concentrations of these compounds could potentially reduce cell viability, limiting the efficiency of
+                    the production process in bioreactors. Therefore, it is crucial to determine the concentration thresholds at
+                    which piperamides and ferulic acid begin to exert toxic effects on the host cells.</p>
+                <p>In this study, we conducted cytotoxicity assays using automated cell counting and flow cytometry to assess
+                    the impact of various concentrations of piperamides and ferulic acid on <em>S. cerevisiae</em>. The goal is
+                    to optimize the conditions for large-scale biopesticide production, ensuring that piperamide yields are
+                    maximized without compromising cell health. The insights gained from this research will contribute to the
+                    development of scalable, microbial-based production systems for piperamides, facilitating their use as
+                    sustainable biopesticides in agricultural applications.</p>
+            </section>
+            <div id="methods" class="my-5">
+                <h2>Methods</h2>
+                <section id="cytotoxicity-assay-automated-cell-counter" class="my-5">
+                    <h2>Cytotoxicity assay - Automated Cell Counter</h2>
+                    <h3>Materials</h3>
+                    <ul>
+                        <li><em>S. cerevisiae</em></li>
+                        <li>Yeast Extract Peptone Dextrose (YPD) liquid medium</li>
+                        <li>Eppendorf tubes 1 mL</li>
+                        <li>Trypan Blue</li>
+                        <li>Eppendorf tube 0.2 mL</li>
+                        <li>Slides for Automated Cell Counter</li>
+                    </ul>
+                    <h3>Procedure</h3>
+                    <p>Growing <em>S. cerevisiae</em> in YPD liquid medium. Adjusted 1x10<sup>6</sup> cells/mL in every tube,
+                        adjusting to 1 mL of culture media to each tube. We cultivated 9 tubes in total.</p>
+                    <h3>Treatments</h3>
+                    <p>Table 1: Treatments description</p>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Treatment</th>
+                                <th>Description</th>
+                                <th>Concentration in culture medium</th>
+                                <th>Solution applied (50μL)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>NC_1</td>
+                                <td>Negative control 1</td>
+                                <td>NA</td>
+                                <td>H2O</td>
+                            </tr>
+                            <tr>
+                                <td>NC_2</td>
+                                <td>Negative control 2</td>
+                                <td>20%</td>
+                                <td>Etanol 100%</td>
+                            </tr>
+                            <tr>
+                                <td>PC</td>
+                                <td>Positive control</td>
+                                <td>6%</td>
+                                <td>Hydrogen peroxide 30%</td>
+                            </tr>
+                            <tr>
+                                <td>PS-1</td>
+                                <td>Piperamides</td>
+                                <td>0.02%</td>
+                                <td>Piperamides solution 0.1%</td>
+                            </tr>
+                            <tr>
+                                <td>PS-2</td>
+                                <td>Piperamides</td>
+                                <td>0.2%</td>
+                                <td>Piperamides solution 1%</td>
+                            </tr>
+                            <tr>
+                                <td>PS-3</td>
+                                <td>Piperamides</td>
+                                <td>2%</td>
+                                <td>Piperamides solution 10%</td>
+                            </tr>
+                            <tr>
+                                <td>FAS-1</td>
+                                <td>Ferulic acid</td>
+                                <td>0.004%</td>
+                                <td>Ferulic acid solution at 0.02%</td>
+                            </tr>
+                            <tr>
+                                <td>FAS-2</td>
+                                <td>Ferulic acid</td>
+                                <td>0.04%</td>
+                                <td>Ferulic acid solution at 0.2%</td>
+                            </tr>
+                            <tr>
+                                <td>FAS-3</td>
+                                <td>Ferulic acid</td>
+                                <td>0.4%</td>
+                                <td>Ferulic acid solution at 2%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <section id="procedure-incubation" class="my-5">
+                        <p>We added the respective treatment (Table 1) to the respective tube and incubated the tubes at 28
+                            degrees C for 45 minutes.</p>
+                        <p>After the incubation took place, we took 10 microliters of the cell culture solution and added 10
+                            microliters of Trypan Blue, mixing and adding that volume on a cell counter slide. We measured
+                            viability on every tube and registered the results.</p>
+                    </section>
+                    <section id="cytotoxicity-assay-flow-cytometry" class="my-5">
+                        <h2>Cytotoxicity assay - Flow Cytometry</h2>
+                        <h3>Introduction</h3>
+                        <p>Here we describe the protocols we used to assess the piperamides and ferulic acid cytotoxic effects
+                            on <em>S. cerevisiae</em> cells using Flow Cytometry.</p>
+                        <h3>Materials</h3>
+                        <ul>
+                            <li><em>S. cerevisiae</em> culture</li>
+                            <li>10 flow cytometry tubes</li>
+                            <li>Zombie NIR</li>
+                            <li>Paraformaldehyde</li>
+                            <li>PBS</li>
+                            <li>Culture media</li>
+                        </ul>
+                        <h3>Procedure</h3>
+                        <p>Growing <em>S. cerevisiae</em> culture: adjusted 1x10<sup>6</sup> cells/mL in every tube, adjusting
+                            to 1 mL of culture media in each tube. We cultivated 9 tubes in total.</p>
+                        <h3>Treatments</h3>
+                        <p>Table 2: Treatments description</p>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Treatment</th>
+                                    <th>Description</th>
+                                    <th>Concentration in culture medium</th>
+                                    <th>Solution applied (250μL)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>H2O</td>
+                                    <td>Negative control 1</td>
+                                    <td>NA</td>
+                                    <td>H2O</td>
+                                </tr>
+                                <tr>
+                                    <td>ET</td>
+                                    <td>Negative control 2</td>
+                                    <td>20%</td>
+                                    <td>Etanol 100%</td>
+                                </tr>
+                                <tr>
+                                    <td>PE</td>
+                                    <td>Positive control</td>
+                                    <td>6%</td>
+                                    <td>Hydrogen peroxide 30%</td>
+                                </tr>
+                                <tr>
+                                    <td>P1</td>
+                                    <td>Piperamides</td>
+                                    <td>0.6%</td>
+                                    <td>Piperamides solution 3%</td>
+                                </tr>
+                                <tr>
+                                    <td>P2</td>
+                                    <td>Piperamides</td>
+                                    <td>1.2%</td>
+                                    <td>Piperamides solution 6%</td>
+                                </tr>
+                                <tr>
+                                    <td>P3</td>
+                                    <td>Piperamides</td>
+                                    <td>1.8%</td>
+                                    <td>Piperamides solution 9%</td>
+                                </tr>
+                                <tr>
+                                    <td>F1</td>
+                                    <td>Ferulic acid</td>
+                                    <td>0.000004%</td>
+                                    <td>Ferulic acid solution at 0.00002%</td>
+                                </tr>
+                                <tr>
+                                    <td>F2</td>
+                                    <td>Ferulic acid</td>
+                                    <td>0.00004%</td>
+                                    <td>Ferulic acid solution at 0.0002%</td>
+                                </tr>
+                                <tr>
+                                    <td>F3</td>
+                                    <td>Ferulic acid</td>
+                                    <td>0.0004%</td>
+                                    <td>Ferulic acid solution at 0.002%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section id="procedure-incubation-zombienir" class="my-5">
+                        <p>We added the respective treatment (Table 2) to the respective tube and incubated the tubes at 28°C
+                            for 45 minutes.</p>
+                        <h3>ZombieNIR<sup>TM</sup> Dye</h3>
+                        <p>After the incubation took place, we added 1 mL of culture media to every tube and washed the cells,
+                            resuspending 500 µL of PBS. The lights were turned off, and 300 µL of ZombieNIR<sup>TM</sup> dye
+                            (diluted 1:2000) was added to each tube.</p>
+                        <p>The tubes were incubated for 15 minutes in darkness at room temperature. After incubation, we added 1
+                            mL of culture media and washed the cells, resuspending them in 500 µL of paraformaldehyde. The cells
+                            were kept at 4°C, wrapped with aluminum foil.</p>
+                        <h3>FACS Discover S8 Becton Dickinson cytometry lecture</h3>
+                        <p>The day after, the cells from each tube were analyzed on the FACS Discover S8 Becton Dickinson Flow
+                            Cytometer.</p>
+                    </section>
+                </section>
+                <div id="results" class="my-5">
+                    <h2>Results</h2>
+                    <div id="cytotoxicity-activity-automated-cell-counter" class="my-5">
+                        <h2>Cytotoxicity activity of piperamides and ferulic acid - Automated Cell Counter</h2>
+                        <p>Cytotoxicity was assessed through the measurement of viability of the cell cultures after these were
+                            exposed to the treatments (different concentrations of piperamides and ferulic acid) and incubated
+                            for 45 minutes. The viability was measured using an automated cell counter and trypan blue.</p>
+                        <p>We did this exploratory assay in order to find the concentrations that were cytotoxic to the cells.
+                        </p>
+                        <p>We started assessing the concentrations of ferulic acid beginning around the limit of solubility
+                            (0.4% m/v) of this compound in water.<sup>1</sup></p>
+                        <p>For the case of piperamides, we just started to assess with the concentration that can be found in
+                            the black pepper plant.<sup>2</sup></p>
+                        <p>After the first assay was conducted, we decided the concentrations to test in a cytotoxic assay made
+                            through flow cytometry.</p>
+                        <figure id="figure-viability" class="my-5 text-center"><img
+                                src="../../images/wet and field lab/citotoxicity/citotoxicity-1.png"
+                                alt="Viability of cells treated with piperamides and ferulic acid" class="img-fluid">
+                            <figcaption class="mt-2">Figure 1. Percentage of viability obtained after the cells were treated
+                                with different concentrations of piperamides and ferulic acid.</figcaption>
+                        </figure>
+                        <section id="cytotoxicity-flow-cytometry-assay" class="my-5">
+                            <p>The first assay measurements of viability are on Figure 1. Here we can conclude that piperamides
+                                do have a cytotoxic effect on yeast cells, and also that the concentration that has a cytotoxic
+                                effect is between 0.2% and 2%.</p>
+                            <p>The concentrations of ferulic acid that we tried show almost the same cell viability, so this
+                                range of concentrations maintains the cell viability around 84%.</p>
+                            <p>These results guide us to try the concentrations in the following experiment.</p>
+                            <h3>Cytotoxicity activity of piperamides and ferulic acid - Flow Cytometry Assay</h3>
+                            <p>The cells were assessed using the FACS Discover S8 Becton Dickinson Flow Cytometer.</p>
+                        </section>
+                        <figure id="figure-gating-strategy" class="my-5 text-center"><img
+                                src="../../images/wet and field lab/citotoxicity/citotoxicity-2.png"
+                                alt="Gating strategy for cytotoxicity assay using ZombieNIR" class="img-fluid"
+                                style="max-width: 600px; width: 100%;">
+                            <figcaption class="mt-2">Figure 2. Here we see the gating strategy (cell size vs viability marker)
+                                for the assay of cytotoxicity using the ZombieNIR as a viability marker. From left to right the
+                                concentrations of ferulic acid (F) and piperamides (P) are increasing. F1 = 0.01%, F2 = 1% and
+                                F3 = 4%, P1 = 0.6%, P2 = 1.2% and P3 = 1.8%.</figcaption>
+                        </figure>
+                        <figure id="table-viability-dead-cells" class="my-5 text-center">
+                            <p class="text-center my-3">Table 1. Viability and Dead Cells percentage related to every treatment
+                                applied.</p>
+                            <table class="table table-striped" style="max-width: 600px; margin: 0px auto;">
+                                <thead>
+                                    <tr>
+                                        <th>Sample</th>
+                                        <th>Concentration</th>
+                                        <th>Viability (%)</th>
+                                        <th>Dead Cells (%)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>H2O</td>
+                                        <td>NA</td>
+                                        <td>95.1</td>
+                                        <td>2.79</td>
+                                    </tr>
+                                    <tr>
+                                        <td>H2O2</td>
+                                        <td>6%</td>
+                                        <td>0.13</td>
+                                        <td>99.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>EtOH</td>
+                                        <td>20%</td>
+                                        <td>94.0</td>
+                                        <td>4.04</td>
+                                    </tr>
+                                    <tr>
+                                        <td>F1</td>
+                                        <td>0.1%</td>
+                                        <td>93.5</td>
+                                        <td>4.10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>F2</td>
+                                        <td>1%</td>
+                                        <td>84.0</td>
+                                        <td>14.1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>F3</td>
+                                        <td>4%</td>
+                                        <td>64.0</td>
+                                        <td>32.4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P1</td>
+                                        <td>0.6%</td>
+                                        <td>9.91</td>
+                                        <td>86.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P2</td>
+                                        <td>1.2%</td>
+                                        <td>6.95</td>
+                                        <td>90.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>P3</td>
+                                        <td>1.8%</td>
+                                        <td>1.06</td>
+                                        <td>96.7</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <figcaption class="mt-2"></figcaption>
+                        </figure>Figure 2 and Table 1 demonstrate that increasing the concentration of ferulic acid leads to a
+                        corresponding increase in cell death. A similar effect is observed with higher concentrations of
+                        piperamides. For ferulic acid, we found that a concentration of 0.01% resulted in cell viability very
+                        similar to the negative control (ETOH), with values of 93.5% and 94%, respectively. In contrast, a
+                        concentration of 1% led to a cell viability of 84%. Therefore, we concluded that further assessment of
+                        concentrations between 0.01% and 1% is needed to determine the inflection point at which ferulic acid
+                        begins to damage the cells. For piperamides we found that the lowest concentration tested in this assay,
+                        0.6%, resulted in significantly reduced cell viability (9.91%). When comparing the viability at 0.2%
+                        piperamides (71%, Figure 1) to that at 0.6% (9.91%, Table 1), it is evident that further investigation
+                        between these concentrations is required to identify the inflection point where piperamides exert a
+                        pronounced cytotoxic effect.<figure id="figure-cell-sorter" class="my-5 text-center"><img
+                                src="../../images/wet and field lab/citotoxicity/citotoxicity-3.png"
+                                alt="BD FACSDiscover S8 Cell Sorter image of live and dead cells" class="img-fluid"
+                                style="max-width: 600px; width: 100%;">
+                            <figcaption class="mt-2">Figure 3. Image created using the BD FACSDiscover<sup>TM</sup> S8 Cell
+                                Sorter with the measures of size (FSC) and internal complexity (SSC) of live and dead cells.
+                            </figcaption>
+                        </figure>
+                        <p>In Figure 3 we can see the differences between the live and dead cells. The live cells fraction shows
+                            bigger and more regular shape than the dead cells fraction.</p>
+                        <p>Based on these exploratory assays, we can conclude that both ferulic acid and piperamides exhibit a
+                            cytotoxic effect on yeast cells. However, further assays are needed to more precisely identify the
+                            inflection points of their cytotoxicity.</p>
+                        <section id="discussion" class="my-5">
+                            <h3>Discussion</h3>
+                            <p>In this study, we investigated the cytotoxic effects of piperamides and ferulic acid on
+                                <em>Saccharomyces cerevisiae</em> to assess their suitability in metabolic pathway design for
+                                biosynthesis applications. Using both automated cell counting with trypan blue exclusion and
+                                flow cytometry with Zombie NIR™ viability dye, we quantified cell viability across a range of
+                                concentrations for both compounds.</p>
+                            <p>Our initial assays using the automated cell counter indicated that piperamides exhibit
+                                significant cytotoxicity at higher concentrations. Specifically, at concentrations of 2% and 5%,
+                                cell viability decreased markedly to 37% and 21%, respectively (Figure 1). In contrast, ferulic
+                                acid did not show significant cytotoxic effects across the tested concentrations up to 0.4%,
+                                maintaining cell viability around 84%. These results suggest that piperamides are inherently
+                                more toxic to yeast cells than ferulic acid at equivalent concentrations.</p>
+                            <p>Flow cytometry assays corroborated these findings and provided more detailed insights.
+                                Piperamides at concentrations of 0.6%, 1.2%, and 1.8% resulted in cell viabilities of 9.91%,
+                                6.95%, and 1.06%, respectively (Table 1). The steep decline in viability at concentrations above
+                                0.6% indicates a pronounced cytotoxic effect, emphasizing the need to carefully regulate
+                                intracellular levels of piperamides in engineered yeast strains. Ferulic acid demonstrated a
+                                dose-dependent but less severe cytotoxicity. Even at the highest concentration tested (0.0004%),
+                                cell viability remained at 64%, suggesting that yeast cells can tolerate higher concentrations
+                                of ferulic acid compared to piperamides.</p>
+                            <p>An unexpected observation was the high viability in the positive control (6% hydrogen peroxide)
+                                during the automated cell counter assay, which contradicted established knowledge of hydrogen
+                                peroxide's oxidative cytotoxicity. This anomaly could be due to experimental error, such as
+                                incorrect reagent concentration, or it might reflect an adaptive oxidative stress response in
+                                yeast cells. However, in the flow cytometry assay, the hydrogen peroxide control resulted in
+                                expected cytotoxicity, with cell viability dropping to 0.13% and dead cells comprising 99.2% of
+                                the population. This discrepancy highlights the importance of assay validation and suggests that
+                                flow cytometry provides a more accurate assessment of cell viability in this context.</p>
+                            <p>The morphological differences between live and dead cells observed via flow cytometry further
+                                confirmed the cytotoxic effects of the compounds tested. Live cells displayed larger sizes and
+                                greater internal complexity, while dead cells were smaller with irregular shapes (Figure 3).
+                                These structural changes are consistent with cellular responses to toxic stress and support the
+                                quantitative viability data obtained.</p>
+                            <p>Our findings have significant implications for the metabolic engineering of <em>S.
+                                    cerevisiae</em> for the biosynthesis of piperamides and ferulic acid. The cytotoxicity of
+                                piperamides at relatively low concentrations suggests that overproduction or accumulation within
+                                the cells could compromise cell viability and, consequently, the efficiency of bioproduction
+                                processes. Strategies such as dynamic regulation of pathway expression, efflux pumps to export
+                                piperamides, or compartmentalization might be necessary to mitigate cytotoxic effects. In
+                                contrast, the higher tolerance of yeast cells to ferulic acid indicates that its biosynthesis
+                                might be more feasible without extensive cellular modifications.</p>
+                            <p>Limitations of this study include the need for more precise determination of the cytotoxic
+                                concentration thresholds for both compounds. For piperamides, further assays with concentrations
+                                between 0.2% and 0.6% could help identify the inflection point where cytotoxicity becomes
+                                significant. Similarly, for ferulic acid, testing concentrations between 0.01% and 1% would
+                                refine our understanding of its impact on cell viability. Additionally, investigating the
+                                mechanisms underlying the cytotoxic effects—such as membrane disruption, reactive oxygen species
+                                generation, or metabolic interference—could provide deeper insights and inform engineering
+                                strategies.</p>
+                        </section>
+                        <section id="conclusion" class="my-5">
+                            <h3>Conclusion</h3>
+                            <p>In conclusion, while ferulic acid appears to be a suitable intermediate for yeast-based
+                                biosynthesis with minimal cytotoxicity, piperamides pose a challenge due to their pronounced
+                                toxic effects at higher concentrations. Future work should focus on optimizing yeast strains and
+                                metabolic pathways to balance efficient production with cell health, ensuring sustainable
+                                biotechnological applications of these compounds.</p>
+                        </section>
+                        <section id="references" class="my-5">
+                            <h3>References</h3>
+                            <p style="background-color: yellow;">1. Mota, F. et al. (2008). Aqueous Solubility of Some Natural Phenolic Compounds. Industrial and
+                                Engineering Chemistry Research, 47 (15), pp.5182-5189. <a
+                                    href="https://doi.org/10.1021/ie074520">10.1021/ie074520</a>. hal-01637105</p>
+                            <p>2. Ikan, R. (1991). Natural Products: A Laboratory Guide. Academic Press.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End Body -->
+
+    <footer style="background-color: #F5F5F5;" > <!-- Footer -->
+        <div class="container">
+            <h2 class="text-center" style="padding-top: 50px;">Partners</h2>
+            <p>The companies and organizations that supported us:</p>
+        </div>
+        
+        <div class="footer-carousel">
+            <div class="carousel-wrapper">
+                <div class="carousel-track">
+                    <img src="../../images/sponsors/climaton.png" alt="climaton">
+                    <img src="../../images/sponsors/Emblem_of_the_All-China_Youth_Federation.svg.png" alt=" Youth Federation">
+                    <img src="../../images/sponsors/Escudo-UNAM-escalable.png" alt="Escudo de la UNAM">
+                    <img src="../../images/sponsors/igemstartups.jpeg" alt="igem startups">
+                    <img src="../../images/sponsors/uniceflogo.png" alt="unicef logo">
+                    <img src="../../images/sponsors/ciencias.webp" alt="Logotipo de la Facultad de Ciencias de la UNAM">
+                    <!-- Repetimos las mismas imágenes para efecto de bucle -->
+                    <img src="../../images/sponsors/climaton.png" alt="climaton">
+                    <img src="../../images/sponsors/Emblem_of_the_All-China_Youth_Federation.svg.png" alt=" Youth Federation">
+                    <img src="../../images/sponsors/Escudo-UNAM-escalable.png" alt="Escudo de la UNAM">
+                    <img src="../../images/sponsors/igemstartups.jpeg" alt="igem startups">
+                    <img src="../../images/sponsors/uniceflogo.png" alt="unicef logo">
+                    <img src="../../images/sponsors/ciencias.webp" alt="Logotipo de la Facultad de Ciencias de la UNAM">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/bootstrap.js"></script>
+</body>
+</html>

@@ -51,17 +51,17 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Wet & Field Lab
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Parts</a></li>
-                                    <li><a class="dropdown-item" href="#">Design</a></li>
-                                    <li><a class="dropdown-item" href="#">Citotoxicity</a></li>
-                                    <li><a class="dropdown-item" href="#">Phytotoxicity</a></li>
-                                    <li><a class="dropdown-item" href="#">Field Tests</a></li>
-                                    <li><a class="dropdown-item" href="#">Future perspectives and troubleshooting</a></li>
+                                    <li><a class="dropdown-item" href="../../pages/wet and field lab/contribution.html">Contribution</a></li>
+                                    <li><a class="dropdown-item" href="../../pages/wet and field lab/design.html">Design</a></li>
+                                    <li><a class="dropdown-item" href="../../pages/wet and field lab/citotoxicity.html">Citotoxicity</a></li>
+                                    <li><a class="dropdown-item" href="../../pages/wet and field lab/phytotoxicity.html">Phytotoxicity</a></li>
+                                    <li><a class="dropdown-item" href="../../pages/wet and field lab/field test.html">Field Tests</a></li>
+                                    <li><a class="dropdown-item" href="../../pages/wet and field lab/notebook.html">Notebook</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -164,9 +164,10 @@
         </p>
         <h3 class="my-4">Here comes the algebra</h3>
         <p>This process can be expressed with a system of ODEs as follows:</p>
-        <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-2.png"
-                alt="ODE system equations" class="img-fluid"></div>
-        <p>To simplify the model, we will make a couple of key assumptions. First, we assume that the enzyme concentrations for
+        <div class="text-center my-4">
+            <img src="../../images/dry lab/model/mathmodel-2.png" alt="ODE system equations" class="img-fluid" style="max-height: 300px;">
+        </div>
+            <p>To simplify the model, we will make a couple of key assumptions. First, we assume that the enzyme concentrations for
             E5, E6, and E11 are identical, which is reasonable since the same promoter drives their expression. Second, we
             assume that these enzymes have reached equilibrium, meaning their concentrations remain constant rather than
             dynamic. This assumption holds since we are using a constitutive promoter that has been producing these proteins
@@ -184,15 +185,16 @@
             single universal equilibrium point that it consistently converges to. Instead, we encounter an equilibrium surface.
             For instance, when examining the equation for P*, it becomes clear that the system has as many equilibrium points as
             multiples of F* and R*—in other words, infinitely many equilibrium points!</p>
-        <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-3.png"
-                alt="Equilibrium behavior graph" class="img-fluid"></div>
+        <div class="text-center my-4">
+            <img src="../../images/dry lab/model/mathmodel-3.png" alt="Equilibrium behavior graph" class="img-fluid"  style="max-height: 400px;">
+        </div>
         <p>We can further explore this idea using a linearization approach. By computing the Jacobian matrix and analyzing its
             trace (τ) and determinant (Δ) at the equilibrium points, we can interpret the system's topological behavior near
             equilibrium. This analysis helps us determine the stability and nature of the equilibrium points, such as whether
             they act as attractors, repulsors, or exhibit more complex dynamics like oscillations. The results are as follows:
         </p>
-        <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-4.png"
-                alt="Jacobian matrix analysis" class="img-fluid"></div>
+        <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-4.png" alt="Jacobian matrix analysis" class="img-fluid" style="max-height: 500px;">
+        </div>
         <p>The most significant result is that, since the last two columns of the Jacobian matrix are linearly dependent, its
             determinant is zero. This indicates that the system does not possess isolated equilibrium points; instead, it
             features a degenerate node. This topological structure stems from the interdependency of the equilibrium states,
@@ -272,13 +274,15 @@
                 simulate the concentrations of metabolites inside or outside the system. Instead, three containers substitute
                 the three strains of the MSS.</p>
             <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-7.png"
-                    alt="System comparison of SSS and MSS" class="img-fluid"></div>
+                    alt="System comparison of SSS and MSS" class="img-fluid">
+            </div>
         </div>
         <div class="container">
             <h3 class="my-4">Multi-Strain Systems are less efficient than Single-Strain Systems</h3>
             <p>We will use the following equations to prove the stated fact:</p>
-            <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-8.png"
-                    alt="Equations proving inefficiency of Multi-Strain Systems" class="img-fluid"></div>
+            <div class="text-center my-4">
+                <img src="../../images/dry lab/model/mathmodel-8.png" alt="Equations proving inefficiency of Multi-Strain Systems" class="img-fluid" style="max-height: 600px;">
+            </div>
             <p>The procedure to demonstrate that the MSS yields less piperamide than the SSS is relatively straightforward. The
                 core concept is based on the principle of mass conservation: since the total mass distributed across metabolites
                 must equal the initial inputs of F and R, we can derive Equation 1. Here, m represents mass, and the subscripts
@@ -318,8 +322,9 @@
             <p>However, this assumption was incorrect. To prove this, we will adopt a complementary approach to the previous, in
                 order to demonstrate that the amount of F consumed is greater in the SSS than in the CFS, meaning less F is
                 wasted in the SSS.</p>
-            <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-11.png"
-                    alt="Equilibrium comparison between CFS and SSS" class="img-fluid"></div>
+            <div class="text-center my-4">
+                <img src="../../images/dry lab/model/mathmodel-11.png" alt="Equilibrium comparison between CFS and SSS" class="img-fluid"  style="max-height: 500px;">
+            </div>
             <p>In Equation 1, we depict F at equilibrium in a CFS. Since the first compartment of the CFS contains only one
                 enzyme, just two metabolites—F and M—are involved. M at equilibrium can be expressed in terms of the initial
                 concentration F₀ and the equilibrium concentration of F, as shown in Equation 2. Combining Equations 1 and 2, we
@@ -336,24 +341,16 @@
             <p>The interpretation of this proof is that in a CFS, the production of M limits the consumption of F, leading to an
                 earlier equilibrium. In contrast, in the SSS, M is consumed as it is produced, which mitigates the limitation on
                 F consumption. In the next figure, it can be seen that a lot of F is retained in the first container.</p>
-            <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-12.png"
-                    alt="Simulation showing F retention in CFS" class="img-fluid"></div>
+            <div class="text-center my-4">
+                <img src="../../images/dry lab/model/mathmodel-12.png" alt="Simulation showing F retention in CFS" class="img-fluid"  style="max-height: 600px;">
+            </div>
             <p>Also, it is important to consider that this model does not take volumes and diffusion into account, which is the
                 same as assuming that there is a perfect transfer between containers.</p>
         </div>
         <div class="container">
             <h3 class="my-4">Conclusions</h3>
-            <p>The dynamic behavior of piperamide production within a SSS demonstrates several critical characteristics. The
-                system exhibits a stable equilibrium along a surface, allowing for perturbations to return to a steady state,
-                which corresponds to a stable production rate of piperamide. The production efficiency increases as the initial
-                concentrations of ferulic acid (F) and piperidine (R) are raised. However, this result is limited, since the
-                model does not consider enzyme saturation, so a more detailed formulation of the problem could help to better
-                understand the limits of piperamide production.</p>
-            <p>With the comparison of models and the evidence presented, the following conclusion arises: It is fundamentally
-                impossible to have a more efficient compartmentalization of metabolic labor than the same pathway in a single
-                compartment. The models suggest that the MSS suffers from losses due to the inefficiencies of metabolite
-                transport across cell membranes, and the CFS is limited by the premature equilibrium of intermediate metabolites
-                like methylenedioxycinnamic acid (M), which restricts the use of available ferulic acid (F).</p>
+            <p>The dynamic behavior of piperamide production within a SSS demonstrates several critical characteristics. The system exhibits a stable equilibrium along a surface, allowing for perturbations to return to a steady state, which corresponds to a stable production rate of piperamide. The production efficiency increases as the initial concentrations of ferulic acid (F) and piperidine (R) are raised. However, this result is limited, since the model does not consider enzyme saturation, so a more detailed formulation of the problem could help to better understand the limits of piperamide production.</p>
+            <p>With the comparison of models and the evidence presented, the following conclusion arises: It is fundamentally impossible to have a more efficient compartmentalization of metabolic labor than the same pathway in a single compartment. The models suggest that the MSS suffers from losses due to the inefficiencies of metabolite transport across cell membranes, and the CFS is limited by the premature equilibrium of intermediate metabolites like methylenedioxycinnamic acid (M), which restricts the use of available ferulic acid (F).</p>
             <p>However, while the SSS may be the most efficient model based on our mathematical models, there are several other
                 biological factors that fall outside their scope. These include pleiotropic effects resulting from the
                 expression of multiple enzymes in a single strain, which can lead to unintended interactions and metabolic

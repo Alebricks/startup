@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phytotoxicity - Alebricks</title>
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/general.css" rel="stylesheet">
+</head>
+<body>
+    <div style="background-color: #F8F9FA;">
+        <div class="container"> <!-- NavBar-->
+            <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../../index.html">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../about/members.html"> Members</a></li>
+                                    <li><a class="dropdown-item" href="../about/mission_vision.html">Mission & Vision</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Project
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../project/description.html">Description</a></li>
+                                    <li><a class="dropdown-item" href="../project/roadmap.html">Roadmap</a></li>
+                                    <li><a class="dropdown-item" href="../project/engineering_success.html">Engineering success</a></li>
+                                    <li><a class="dropdown-item" href="../project/business_model.html">Business model</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Safety
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../safety/biosafety.html">Biosafety & Biosecurity</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Wet & Field Lab
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./contribution.html">Contribution</a></li>
+                                    <li><a class="dropdown-item" href="./design.html">Design</a></li>
+                                    <li><a class="dropdown-item" href="./citotoxicity.html">Citotoxicity</a></li>
+                                    <li><a class="dropdown-item" href="./phytotoxicity.html">Phytotoxicity</a></li>
+                                    <li><a class="dropdown-item" href="./field test.html">Field Tests</a></li>
+                                    <li><a class="dropdown-item" href="./notebook.html">Notebook</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dry Lab
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../dry lab/Overview.html">Overview</a></li>
+                                    <li><a class="dropdown-item" href="../dry lab/genome_annotation.html">Genome annotation</a></li>
+                                    <li><a class="dropdown-item" href="../dry lab/differential-expression-analysis.html">Differential expression analysis</a></li>
+                                    <li><a class="dropdown-item" href="../dry lab/docking.html">Docking</a></li>
+                                    <li><a class="dropdown-item" href="../dry lab/alternative-enzymes-selection.html">Alternative enzymes selection</a></li>
+                                    <li><a class="dropdown-item" href="../dry lab/docking-mds.html">Docking and MDS</a></li>
+                                    <li><a class="dropdown-item" href="../dry lab/model.html">Math-Model</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Human Practices
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Human Practices</a></li>
+                                    <li><a class="dropdown-item" href="#">Integrated Human Practices</a></li>
+                                    <li><a class="dropdown-item" href="#">Diversity and Inclusivity</a></li>
+                                    <li><a class="dropdown-item" href="#">Education</a></li>
+                                    <li><a class="dropdown-item" href="#">Philosophy and episthemology</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ARTS & DESIGN
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                    <li><a class="dropdown-item" href="#">Videogame</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    AKNOWLEDGEMENTS
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Attributions</a></li>
+                                    <li><a class="dropdown-item" href="#">Sponsors</a></li>
+                                    <li><a class="dropdown-item" href="#">Crowdfunding</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Sustainable development
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Ecological Niche Modeling</a></li>
+                                    <li><a class="dropdown-item" href="#">SDG's</a></li>
+                                    <li><a class="dropdown-item" href="#">Negative Impact</a></li>
+                                    <li><a class="dropdown-item" href="#">Why to protect maize?</a></li>
+                                    <li><a class="dropdown-item" href="#">Climaton</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div> <!-- End Container NavBar-->
+
+    <div class="container my-5"> <!-- Body -->
+        <div class="row mb-4">
+            <div class="col text-center">
+                <h1 class="display-4 mt-5">Phytotoxicity Study on Maize</h1>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Introduction</h2>
+                        <p class="card-text">The fall armyworm (<em>Spodoptera frugiperda</em>) poses a significant threat to
+                            maize (<em>Zea mays</em>) crops worldwide, leading to substantial economic losses. Sustainable
+                            agriculture necessitates the development of effective and environmentally friendly pest control
+                            methods. Piperamides, naturally occurring compounds found in <em>Piper</em> species, have emerged as
+                            promising candidates for biopesticide development due to their insecticidal and allelopathic
+                            properties.</p>
+                        <p class="card-text">Previous research has highlighted the selective phytotoxic effects of piperamides
+                            on various plant species. Tavares et al. (2011) investigated the inhibitory activity of piperine—a
+                            type of piperamide—on seed germination and seedling growth in both monocotyledonous and
+                            dicotyledonous plants. Their findings revealed a concentration-dependent effect: piperine inhibited
+                            germination in dicotyledons such as <em>Bidens pilosa</em>, <em>Cucumis sativus</em>, and
+                            <em>Lactuca sativa</em>by up to 12.82% at 5 mg/kg, while stimulating germination in the
+                            monocotyledonous <em>Allium cepa</em> by 30.43% at the same concentration. Additionally, piperine
+                            significantly reduced the seedling length in dicotyledons, suggesting its potential utility in
+                            organic weed management due to its selective allelopathic activity.</p>
+                        <p class="card-text">Given these selective effects, it is crucial to assess whether piperamides
+                            adversely affect maize—a monocotyledon—when used as a biopesticide against the fall armyworm.
+                            Understanding the impact of piperamides on maize seed germination and seedling growth is essential
+                            to ensure their safe application in maize cultivation. Specifically, we aim to evaluate the effects
+                            of piperamides present in the substrate on the germination and growth of maize seeds under
+                            controlled conditions (Mendes et al., 2021), simulating realistic field scenarios where the
+                            biopesticide would be applied via crop spraying.</p>
+                        <p class="card-text">To address this, we investigated three concentrations of piperamides (0.02%, 0.2%,
+                            and 2%) applied directly to the substrate. These concentrations were selected based on preliminary
+                            explorations with the aim of a biopesticide formulation with a concentration around 2%. By assessing
+                            the phytotoxic effects of piperamides at these concentrations, we seek to determine whether
+                            piperamide-based biopesticides can be safely used in maize fields without hindering seed germination
+                            and seedling development.</p>
+                        <p class="card-text">Our study provides valuable insights for the development of effective and safe
+                            piperamide-based biopesticides, balancing pest control efficacy with crop safety. The findings will
+                            inform strategies for the use of piperamides in maize cultivation, ensuring that the benefits of
+                            controlling the fall armyworm do not compromise crop viability.</p>
+                        <p class="card-text">To address this, we investigated three concentrations of piperamides (0.02%, 0.2%,
+                            and 2%) applied directly to the substrate. These concentrations were selected based on preliminary
+                            explorations with the aim of a biopesticide formulation with a concentration around 2%. By assessing
+                            the phytotoxic effects of piperamides at these concentrations, we sought to determine whether
+                            piperamide-based biopesticides can be safely used in maize fields without hindering seed germination
+                            and seedling development.</p>
+                        <p class="card-text">Our study provides valuable information for the development of effective and safe
+                            piperamide-based biopesticides, balancing pest control efficacy with crop safety. The findings will
+                            inform strategies for the use of piperamides in maize cultivation, ensuring that the benefits of
+                            controlling the fall armyworm do not compromise crop viability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Methods</h2>
+                        <div class="mb-3">
+                            <h5>Figure 1. Experimental setup for evaluating the effects of piperamides on seed germination.</h5>
+                            <p>Piperamide solutions at different concentrations were applied to vermiculite, which was then left
+                                to dry for three days under direct ventilation. Once dried, the vermiculite was hydrated with
+                                water, and pre-hydrated maize seeds were placed on the treated substrate in Petri dishes. Seed
+                                germination was monitored on day 1, day 4, and day 7 after placement. Germination results were
+                                compared among the different treatments, as illustrated in the results section.</p>
+                            <div class="text-center"><img
+                                    src="../../images/wet and field lab/phytotoxicity/phytotoxicity-1.png"
+                                    alt="Phytotoxicity 1" class="img-fluid">
+                                <p class="text-muted">Figure 1: Experimental setup for evaluating the effects of piperamides on
+                                    seed germination.</p>
+                            </div>
+                        </div>
+                        <h5>Preparation and Application of Treatments to the Substrate</h5>
+                        <p>Piperamide treatments were prepared by diluting a stock solution of piperamides at 10% to create
+                            three solutions corresponding to the concentrations used in each treatment (Table 1). For each
+                            treatment, 25 mL of the appropriate piperamide solution was taken and mixed thoroughly with 30 grams
+                            of vermiculite in a container. The mixture was agitated to ensure even distribution of the solution
+                            throughout the substrate. The treated vermiculite was then left uncovered in a dark, well-ventilated
+                            area for three days to allow the alcohol from the solutions to evaporate completely.</p>
+                        <p><strong>Treatment Description</strong>:</p>
+                        <table class="table table-striped table-bordered table-hover">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Treatment</th>
+                                    <th>Description</th>
+                                    <th>Estimated Piperamides Concentration in Substrate (g/kg)*</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Control</td>
+                                    <td>Deionized water</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>PS-1</td>
+                                    <td>Piperamides 0.02% in absolute ethanol</td>
+                                    <td>0.02</td>
+                                </tr>
+                                <tr>
+                                    <td>PS-2</td>
+                                    <td>Piperamides 0.2% in absolute ethanol</td>
+                                    <td>0.2</td>
+                                </tr>
+                                <tr>
+                                    <td>PS-3</td>
+                                    <td>Piperamides 2% in absolute ethanol</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="text-muted">*Considering the increase in weight and volume due to vermiculite hydration.</p>
+                        <h5>Preparation of Maize Seeds</h5>
+                        <p>The maize seeds were purchased from a local supermarket, distributed by the brand Verde Valle, and
+                            specifically of the “Maíz Palomero” variety. The seeds were first washed with plain water and then
+                            placed in a beaker filled with water for hydration. The seeds were left to soak for 24 hours to
+                            promote germination and ensure uniform hydration (at least initially) across all experimental
+                            groups.</p>
+                        <h5>Seed Distribution, Incubation and Monitoring</h5>
+                        <p>For each treatment, 90 maize seeds were distributed across three Petri dishes containing the treated
+                            vermiculite. The dishes were then placed in an incubator set to a temperature of 25°C with a 12-hour
+                            light/12-hour dark photoperiod. Monitoring of germination was conducted on days 1, 4, and 7 after
+                            the seeds were placed in the Petri dishes. During each monitoring period, the number of germinated
+                            seeds in each Petri dish was counted individually.</p>
+                        <h5>Statistical Analysis</h5>
+                        <p>Data obtained from seed germination monitoring on days 1, 4, and 7 were analyzed to determine the
+                            effects of piperamide treatments on maize seed germination. Normality of the germination data was
+                            assessed using the Shapiro-Wilk test, while homoscedasticity was evaluated with Levene's test. Given
+                            the absence of normality or homoscedasticity in some datasets, non-parametric statistical tests were
+                            applied. The Kruskal-Wallis test was used to compare germination rates across treatments, followed
+                            by Dunn's post hoc test with Bonferroni correction to identify pairwise differences between groups.
+                            Additionally, a repeated-measures analysis of variance (ANOVA) was conducted to evaluate the effect
+                            of time (days) on germination rates across treatments. All statistical analyses were performed using
+                            Python, with a significance threshold set at p &lt; 0.05. Graphical representations of the data,
+                            including boxplots, bar plots, and heatmaps, were generated to visualize differences between
+                            treatments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Results</h2>
+                        <div class="mb-3">
+                            <h5>Figure 2. Distribution of germinated vs. non-germinated seeds by treatment.</h5>
+                            <p>This barplot shows the distribution of germinated (yellow) and non-germinated (blue) seeds for
+                                the control and different concentrations of piperamides (0.02%, 0.2%, and 2%). The control group
+                                exhibits a higher proportion of germinated seeds, while the piperamide treatments show a
+                                progressive reduction in germination across all concentrations. This indicates a clear
+                                inhibitory effect of piperamides on seed germination, with a larger portion of non-germinated
+                                seeds as piperamide concentration increases.</p>
+                            <div class="text-center"><img
+                                    src="../../images/wet and field lab/phytotoxicity/phytotoxicity-2.png"
+                                    alt="Phytotoxicity 2" class="img-fluid">
+                                <p class="text-muted">Figure 2: Distribution of germinated vs. non-germinated seeds by
+                                    treatment.</p>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <h5>Figure 3. Boxplot of seed germination across treatments.</h5>
+                            <p>This plot compares the number of germinated seeds after treatment with different concentrations
+                                of piperamides (0.02%, 0.2%, y 2%) versus the control. The control group shows a significantly
+                                higher number of germinated seeds compared to the piperamide treatments, which exhibit reduced
+                                germination in a dose-dependent manner. The boxes represent the interquartile range (IQR), the
+                                horizontal lines inside the boxes indican el mediano, y los bigotes muestran el rango de valores
+                                sin outliers. Los outliers están representados por puntos individuales.</p>
+                            <div class="text-center"><img
+                                    src="../../images/wet and field lab/phytotoxicity/phytotoxicity-3.png"
+                                    alt="Phytotoxicity 3" class="img-fluid">
+                                <p class="text-muted">Figure 3: Boxplot of seed germination across treatments.</p>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <h5>Figure 4. Dunn's post hoc test with Bonferroni adjustment for multiple comparisons of seed
+                                germination between treatments.</h5>
+                            <p>The heatmap displays p-values for pairwise comparisons between the Control and Piperamides
+                                treatments (0.02%, 0.2%, y 2%) after a Kruskal-Wallis test. Blue cells indicate statistically
+                                significant differences (p &lt; 0.05), mientras que las celdas rojas indican diferencias no
+                                significativas. Los resultados muestran diferencias significativas entre el Control y todos los
+                                tratamientos de Piperamides, pero no hay diferencias significativas entre las concentraciones de
+                                Piperamides (0.02%, 0.2%, y 2%).</p>
+                            <div class="text-center"><img
+                                    src="../../images/wet and field lab/phytotoxicity/phytotoxicity-4.png"
+                                    alt="Phytotoxicity 4" class="img-fluid">
+                                <p class="text-muted">Figure 4: Dunn's post hoc test with Bonferroni adjustment for multiple
+                                    comparisons of seed germination between treatments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Discussion</h2>
+                        <p class="card-text">The primary objective of this study was to evaluate the phytotoxic effects of
+                            piperamides on maize (<em>Zea mays</em>) seed germination and seedling development to determine
+                            their suitability as biopesticides in maize cultivation. We investigated three concentrations of
+                            piperamides (0.02%, 0.2%, y 2%) applied directly to the substrate and compared their effects to a
+                            control group without piperamides. Our findings demonstrate a clear inhibitory effect of piperamides
+                            on maize seed germination, which intensified with increasing concentrations. This dose-dependent
+                            inhibition aligns with previous reports of piperamide phytotoxicity on dicotyledonous species but
+                            reveals a concerning sensitivity in maize, a monocotyledon.</p>
+                        <p class="card-text">The germination assays indicated that the control group exhibited significantly
+                            higher germination rates compared to all piperamide-treated groups (Figure 3). Even at the lowest
+                            concentration of 0.02%, piperamides significantly reduced germination rates, suggesting that maize
+                            seeds are highly sensitive to these compounds. The inhibitory effect was most pronounced at the
+                            highest concentration of 2%, where germination rates were drastically reduced. This dose-dependent
+                            response is consistent with the findings of Tavares et al. (2011), who reported that piperine
+                            inhibited germination in dicotyledonous plants at higher concentrations. However, unlike the monocot
+                            Allium cepa, which showed stimulated germination in the presence of piperine, maize seeds exhibited
+                            inhibition, indicating species-specific responses among monocots to piperamides.</p>
+                        <p class="card-text">Statistical analysis using the Kruskal-Wallis test confirmed significant
+                            differences between the control and all piperamide treatments (p &lt; 0.05), as further supported by
+                            Dunn's post hoc test with Bonferroni correction (Figure 4). Notably, there were no significant
+                            differences among the piperamide treatments themselves, implying that even minimal concentrations
+                            can substantially inhibit maize seed germination. This lack of significant difference between
+                            varying concentrations suggests a threshold effect, where any presence of piperamides above a
+                            minimal level adversely affects germination.</p>
+                        <p class="card-text">The distribution analysis of germinated versus non-germinated seeds (Figure 2)
+                            reinforced this observation, showing an increased proportion of non-germinated seeds with higher
+                            piperamide concentrations. This trend indicates that the application of piperamide-based
+                            biopesticides could potentially compromise maize crop viability if not carefully managed. The
+                            sensitivity of maize seeds to piperamides raises concerns about their direct application to the
+                            substrate in agricultural settings.</p>
+                        <p class="card-text">Our findings highlight a critical consideration for the use of piperamides as
+                            biopesticides in maize cultivation. While piperamides are known for their insecticidal properties
+                            against pests like the fall armyworm (<em>Spodoptera frugiperda</em>), their phytotoxic effects on
+                            maize seeds present a significant obstacle. The contrasting responses between maize y otros
+                            monocotiledóneos como <em>Allium cepa</em> sugieren que la fitotoxicidad de los piperamides no es
+                            uniforme en las especies monocotiledóneas. Esta discrepancia subraya la importancia de evaluaciones
+                            fitotóxicas específicas para cada cultivo al desarrollar biopesticidas.</p>
+                        <p class="card-text">Several factors could contribute to the observed phytotoxicity in maize seeds.
+                            Piperamides may interfere with crucial physiological processes during germination, such as enzyme
+                            activity, hormonal regulation, or membrane integrity. The high lipophilicity of piperamides might
+                            facilitate their penetration into seed tissues, leading to intracellular disruptions that inhibit
+                            germination. Further research is needed to elucidate the exact mechanisms by which piperamides
+                            affect maize seeds.</p>
+                        <p class="card-text">Given the adverse effects observed even at the lowest concentration tested,
+                            alternative strategies must be considered to mitigate the phytotoxic impact of piperamides on maize.
+                            Possible approaches include:
+                        <ul>
+                            <li><strong>Formulation Adjustments:</strong> Developing controlled-release formulations or
+                                encapsulation techniques that reduce direct exposure of seeds to piperamides, potentially by
+                                targeting the active compound more precisely at the pest.</li>
+                            <li><strong>Application Timing:</strong> Applying piperamide-based biopesticides at stages when
+                                maize seeds have already germinated and seedlings have developed past the most vulnerable
+                                stages.</li>
+                            <li><strong>Combination with Safeners:</strong> Investigating the use of safener compounds that
+                                could protect maize seeds from the phytotoxic effects of piperamides without diminishing their
+                                insecticidal efficacy.</li>
+                        </ul>Additionally, field studies are essential to assess whether environmental factors such as soil
+                        composition, microbial activity, and climatic conditions might mitigate the phytotoxic effects observed
+                        under controlled laboratory conditions. In natural settings, factors like soil adsorption, degradation
+                        by microorganisms, and dilution could reduce the effective concentration of piperamides reaching the
+                        seeds.</p>
+                        <p class="card-text">Our study also highlights the need for comprehensive risk assessments when
+                            introducing new biopesticides into agricultural practices. While the goal is to develop effective
+                            pest control methods that are environmentally friendly, it is crucial to ensure that these methods
+                            do not inadvertently harm the crops they are intended to protect. The balance between pest control
+                            efficacy and crop safety must be carefully managed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Conclusion</h2>
+                        <p class="card-text">In conclusion, although piperamides exhibit promising insecticidal properties
+                            against pests like the fall armyworm, their inhibitory effects on maize seed germination present
+                            significant challenges for their use in maize cultivation. Our findings suggest that direct
+                            application of piperamides to the substrate is not advisable due to the high sensitivity of maize
+                            seeds. Future research should focus on developing application methods that minimize phytotoxicity,
+                            understanding the mechanisms underlying the inhibitory effects, and evaluating the performance of
+                            piperamide-based biopesticides under realistic agricultural conditions. By addressing these
+                            challenges, it may be possible to harness the benefits of piperamides for pest control while
+                            ensuring the safety and viability of maize crops in sustainable agriculture.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">References</h2>
+                        <ul class="list-unstyled">
+                            <li>Tavares, W. S., Cruz, I., Petacci, F., Freitas, S. S., Serratilde, J. E., &amp; Zanuncio, J. C.
+                                (2011). Insecticide activity of piperine: Toxicity to eggs of <em>Spodoptera frugiperda</em>
+                                (Lepidoptera: Noctuidae) y <em>Diatraea saccharalis</em> (Lepidoptera: Pyralidae) y
+                                fitotoxicidad en varias hortalizas. <em>Journal Of Medicinal Plants Research</em>, 5(21),
+                                5301-5306. https://doi.org/10.5897/jmpr.9000814</li>
+                            <li>Mendes, P. M., Ribeiro, J. A., Martins, G. A., Lucia Jr, T., Araujo, T. R., Fuentes-Guevara, M.
+                                D., ... &amp; Corrêa, É. K. (2021). Phytotoxicity test in check: Proposition of methodology for
+                                comparison of different method adaptations usually used worldwide. <em>Journal of Environmental
+                                    Management</em>, 291, 112698.</li>
+                            <li>Nelson, D. L., Lehninger, A. L., &amp; Cox, M. M. (2008). <em>Lehninger principles of
+                                    biochemistry</em>. Macmillan.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End Body -->
+
+    <footer style="background-color: #F5F5F5;" > <!-- Footer -->
+        <div class="container">
+            <h2 class="text-center" style="padding-top: 50px;">Partners</h2>
+            <p>The companies and organizations that supported us:</p>
+        </div>
+        
+        <div class="footer-carousel">
+            <div class="carousel-wrapper">
+                <div class="carousel-track">
+                    <img src="../../images/sponsors/climaton.png" alt="climaton">
+                    <img src="../../images/sponsors/Emblem_of_the_All-China_Youth_Federation.svg.png" alt=" Youth Federation">
+                    <img src="../../images/sponsors/Escudo-UNAM-escalable.png" alt="Escudo de la UNAM">
+                    <img src="../../images/sponsors/igemstartups.jpeg" alt="igem startups">
+                    <img src="../../images/sponsors/uniceflogo.png" alt="unicef logo">
+                    <img src="../../images/sponsors/ciencias.webp" alt="Logotipo de la Facultad de Ciencias de la UNAM">
+                    <!-- Repetimos las mismas imágenes para efecto de bucle -->
+                    <img src="../../images/sponsors/climaton.png" alt="climaton">
+                    <img src="../../images/sponsors/Emblem_of_the_All-China_Youth_Federation.svg.png" alt=" Youth Federation">
+                    <img src="../../images/sponsors/Escudo-UNAM-escalable.png" alt="Escudo de la UNAM">
+                    <img src="../../images/sponsors/igemstartups.jpeg" alt="igem startups">
+                    <img src="../../images/sponsors/uniceflogo.png" alt="unicef logo">
+                    <img src="../../images/sponsors/ciencias.webp" alt="Logotipo de la Facultad de Ciencias de la UNAM">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/bootstrap.js"></script>
+</body>
+</html>
