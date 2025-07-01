@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Differential Expression Analysis - Alebricks</title>
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/general.css" rel="stylesheet">
+</head>
+<body>
+    <div style="background-color: #F8F9FA;">
+        <div class="container"> <!-- NavBar-->
+            <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../../index.html">Alebricks</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../about/members.html"> Members</a></li>
+                                    <li><a class="dropdown-item" href="../about/mission_vision.html">Mission & Vision</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Project
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../project/description.html">Description</a></li>
+                                    <li><a class="dropdown-item" href="../project/roadmap.html">Roadmap</a></li>
+                                    <li><a class="dropdown-item" href="../project/engineering_success.html">Engineering success</a></li>
+                                    <li><a class="dropdown-item" href="../project/business_model.html">Business model</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Safety
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../safety/biosafety.html">Biosafety & Biosecurity</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Wet & Field Lab
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Parts</a></li>
+                                    <li><a class="dropdown-item" href="#">Design</a></li>
+                                    <li><a class="dropdown-item" href="#">Citotoxicity</a></li>
+                                    <li><a class="dropdown-item" href="#">Phytotoxicity</a></li>
+                                    <li><a class="dropdown-item" href="#">Field Tests</a></li>
+                                    <li><a class="dropdown-item" href="#">Future perspectives and troubleshooting</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dry Lab
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./Overview.html">Overview</a></li>
+                                    <li><a class="dropdown-item" href="./genome_annotation.html">Genome annotation</a></li>
+                                    <li><a class="dropdown-item" href="./differential-expression-analysis.html">Differential expression analysis</a></li>
+                                    <li><a class="dropdown-item" href="./docking.html">Docking</a></li>
+                                    <li><a class="dropdown-item" href="./alternative-enzymes-selection.html">Alternative enzymes selection</a></li>
+                                    <li><a class="dropdown-item" href="./docking-mds.html">Docking and MDS</a></li>
+                                    <li><a class="dropdown-item" href="./model.html">Math-Model</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Human Practices
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Human Practices</a></li>
+                                    <li><a class="dropdown-item" href="#">Integrated Human Practices</a></li>
+                                    <li><a class="dropdown-item" href="#">Diversity and Inclusivity</a></li>
+                                    <li><a class="dropdown-item" href="#">Education</a></li>
+                                    <li><a class="dropdown-item" href="#">Philosophy and episthemology</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ARTS & DESIGN
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                    <li><a class="dropdown-item" href="#">Videogame</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    AKNOWLEDGEMENTS
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Attributions</a></li>
+                                    <li><a class="dropdown-item" href="#">Sponsors</a></li>
+                                    <li><a class="dropdown-item" href="#">Crowdfunding</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Sustainable development
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Ecological Niche Modeling</a></li>
+                                    <li><a class="dropdown-item" href="#">SDG's</a></li>
+                                    <li><a class="dropdown-item" href="#">Negative Impact</a></li>
+                                    <li><a class="dropdown-item" href="#">Why to protect maize?</a></li>
+                                    <li><a class="dropdown-item" href="#">Climaton</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div> <!-- End Container NavBar-->
+
+    <div class="container my-5"> <!-- Body -->
+        <h1 class="text-center">Differential Expression Analysis</h1>
+        <div class="card mt-4">
+            <div class="card-body">
+                <h3 class="card-title">Differential Expression Analysis</h3>
+                <p class="card-text text-justify">In order to find the other enzymes present in the biosynthetic pathway, a
+                    differential expression analysis was performed in the same way piperine synthase and other enzymes have been
+                    discovered. RNAseq data from four different tissues of P. nigrum were used; these tissues were leaf,
+                    flowering spadix, and black pepper fruits at two different stages: 20-30 days post anthesis and 40-60 days
+                    post anthesis; each tissue was represented by three biological replicates, having a total of 12 samples.
+                    From now on, the spadix of the panicle will be referred to just as panicle. The mature fruit (40 days post
+                    anthesis) has the highest piperine and piperamide concentration from all the four tissues studied;
+                    considering this, it is expected that the genes over-expressed in mature fruit in comparison with the other
+                    tissues are related to piperine/piperidine biosynthesis.</p>
+                <p class="card-text text-justify">The RNAseq data were obtained from the SRA database with BioProject ID:
+                    PRJEB38192; the sequencing technology used was Illumina HiSeq 2000 paired end sequencing. The average number
+                    of reads per run was 35.46 Mbp, the quality of the reads was evaluated by using FastQC, a quality control
+                    tool for high-throughput sequence data, and summarized with MultiQC. The reads were checked for adapter
+                    content and these were removed with Trimmomatic. The sequences were also quality trimmed using a sliding
+                    window of four nucleotides and a required average quality of 20, with a minimum length of 125 bp. After the
+                    raw data of the samples were cleaned, the average number of reads per run was 27.08 Mbp. The cleaned reads
+                    were mapped to the CDS sequences of the reference genome of P. nigrum by using Kallisto.</p>
+                <p class="card-text text-justify">With the count values obtained from the mapping, a differential expression
+                    analysis (DEA) was performed using the DESeq2 algorithm, a method for differential analysis of count data,
+                    using shrinkage estimation for dispersions and fold changes to improve stability and interpretability of
+                    estimates. With this data, a principal component analysis (PCA) was performed, and can be seen in the next
+                    figure. The principal component number one, which contains 56% of the variance of the data, can
+                    differentiate between both the immature and mature fruit samples and the leaf and spadix tissues; the second
+                    component, with 36% of the variance, differentiates clearly between leaf and panicle tissues. Even though
+                    there is a distinction between both fruit stages, they cannot be differentiated completely with this
+                    analysis, which indicates that there is a lot of similarity in the gene expression of both stages.</p>
+                <div class="text-center"><img src="../../images/dry lab/differential expression analysis/differential-expression-1.png"
+                        alt="differential expression analysis 1" class="img-fluid mt-50 mb-50"></div>
+                <p class="card-text text-justify">The differential expression analysis found 17,071 differentially expressed
+                    genes across the selected tissues; these genes form an expression pattern for every tissue in the analysis.
+                    These genes were selected using a likelihood ratio test (LRT) to verify if they were significantly expressed
+                    in a different way across tissues. Genes with an absolute log2FoldChange value greater than one and an
+                    adjusted p-value lower than 0.05 in comparisons between mature fruit and every other tissue were considered
+                    as differentially expressed in mature fruit. These results can be seen in the next figures.</p>
+                <h4>Figures:</h4>
+                <div class="text-center mt-100">
+                    <h5 class="text-muted">Volcano plot of differentially expressed genes in mature fruit</h5><img
+                        src="../../images/dry lab/differential expression analysis/differential-expression-2.png"
+                        alt="differential expression analysis 2" class="img-fluid">
+                </div>
+                <div class="text-center mt-100 mb-50">
+                    <h5 class="text-muted">Volcano plot of differentially expressed genes in mature fruit, likelihood ratio
+                        test.</h5><img src="../../images/dry lab/differential expression analysis/differential-expression-3.png"
+                        alt="differential expression analysis 3" class="img-fluid">
+                </div>
+                <p class="card-text text-justify">A search for the genes differentially expressed in mature fruit in comparison
+                    with every other tissue studied was performed; these results were verified by the LRT with an adjusted
+                    p-value lower than 0.01 and an absolute log<sup>2</sup>FoldChange greater than 1. The results showed that
+                    19,918 genes were differentially expressed in mature fruit in comparison with some tissue, but only 526 were
+                    in comparison to all tissues. From these genes, 10,972 were over-expressed in comparison with some tissue
+                    and only 223 genes were over-expressed in comparison to all tissues. From these genes, only those selected
+                    by hypothesis testing by LRT were conserved; 15,275 genes were differentially expressed in mature fruit in
+                    comparison with some tissue, but only 523 were in comparison to all tissues. This represents a reduction of
+                    three genes that were not considered as differentially expressed to all tissues after the hypothesis
+                    testing. From these genes, 9,022 were over-expressed in comparison with some tissue and 223 genes were
+                    over-expressed in comparison to all tissues; here we can see that there was no reduction in the number of
+                    genes interpreted as over-expressed to all other tissues, meaning a zero false discovery rate in this group.
+                </p>
+                <div class="text-center mt-50 mb-50">
+                    <h6 class="text-muted">Venn diagram of differentially expressed genes in mature fruit. DE: Differentially
+                        expressed genes, Up: over-expressed genes. a-b pre hypothesis testing by LRT, c-d post hypothesis
+                        testing by LRT.</h6><img src="../../images/dry lab/differential expression analysis/differential-expression-4.png"
+                        alt="differential expression analysis 4 - Venn Diagram" class="img-fluid">
+                </div>
+                <p class="card-text text-justify">With the 523 genes found that are differentially expressed in mature fruit, a
+                    transcriptome profile was made. The heatmap shows the gene expression level for all the samples; the genes
+                    are clustered in eight clusters found by k-means, and the number of adequate clusters was selected by the
+                    elbow method using the total within sum of squares of the cluster. The clusters 1, 2, and 7 are those of
+                    interest since they contain the genes over-expressed in mature fruit in comparison to all tissues, probably
+                    involved in the biosynthesis of piperamides.</p>
+                <div class="text-center"><img src="../../images/dry lab/differential expression analysis/differential-expression-5.png"
+                        alt="differential expression analysis 5" class="img-fluid"></div>
+                <p class="card-text text-justify">The second gene most over-expressed in mature fruit is annotated as a
+                    terpenoid cyclases/protein prenyltransferases superfamily protein by the GeneFamilyClassifier tool. This
+                    gene has the highest log<sup>2</sup>FoldChange found (12.69) and an adjusted p-value of 9.74 ×
+                    10<sup>-129</sup>. We propose that this enzyme could perform the step nine of the proposed biosynthetic
+                    pathway. In order to support this hypothesis, a molecular docking methodology was performed, as with the
+                    other proposed enzymes. Even though enzymes 5 and 6 are characterized for the synthesis of piperine, these
+                    enzymes cannot act on ligands with two fewer carbons like the proposed piperamide. For enzyme five, the gene
+                    Pn7.1626 was selected based on its similarity with the characterized protein (ID: QQS74306), with 76.908%
+                    identity and E-value ≊ 0. For enzyme number six, the selected gene was Pn16.1198; the protein produced from
+                    this gene is annotated as a 4-coumarate:CoA ligase 2, which is the expected activity for the enzyme. It has
+                    a 75.632% identity with the known enzyme (ID: QGY72664), and it is the sixth over-expressed gene in mature
+                    fruit with a log<sup>2</sup>FoldChange of 7.31 and an adjusted p-value of 5.89 × 10<sup>-81</sup>. Its
+                    expression is higher in mature fruit than the known protein, which is the 189th over-expressed gene with a
+                    log<sup>2</sup>FoldChange of 1.84 and an adjusted p-value of 9.78 × 10<sup>-7</sup>.</p>
+                <p class="card-text text-justify">The piperine synthase (ID: QUS53100) cannot act on an acyl donor two carbons
+                    shorter than its normal substrate, piperoyl-CoA, but a similar enzyme called piperamide synthase (ID:
+                    QUS53101) can act on a wider variety of acyl donors, including the 3,4-methylenedioxy cinnamoyl CoA, which
+                    is the compound involved in our proposed biosynthetic pathway. The piperine synthase corresponds to the gene
+                    Pn12.1813; this gene is annotated as a HXXXD-type acyl-transferase family protein, which is the reaction
+                    type performed by the piperine synthase. This gene is over-expressed in the mature fruit in position 95,
+                    with a log<sup>2</sup>FoldChange of 4.77 and an adjusted p-value of 1.19 × 10<sup>-20</sup>.</p>
+                <p class="card-text text-justify">The piperamide synthase corresponds to the gene Pn6.2477; this gene is also
+                    annotated as a HXXXD-type acyl-transferase family protein. This gene is over-expressed in the mature fruit
+                    in position 56, with a log<sup>2</sup>FoldChange of 5.44 and an adjusted p-value of 1.89 × 10<sup>-34</sup>.
+                </p>
+                <p class="card-text text-justify">The three remaining enzymes were selected from the literature. Three of the
+                    genes selected were found over-expressed in the mature fruit, where the piperine and piperamides are present
+                    in the highest concentration in the plant. This expression pattern can be thought of as a temporal
+                    expression program for the biosynthetic pathway; in this way, the different transcriptional units were
+                    designed, and the expression pattern of the construct works in a similar way to the temporal model found in
+                    the expression pattern of the pathway in <em>Piper nigrum</em>.</p>
+            </div>
+        </div>
+    </div> <!-- End Body -->
+
+    <footer style="background-color: #F5F5F5;" > <!-- Footer -->
+        <div class="container">
+            <h2 class="text-center" style="padding-top: 50px;">Partners</h2>
+            <p>The companies and organizations that supported us:</p>
+        </div>
+        
+        <div class="footer-carousel">
+            <div class="carousel-wrapper">
+                <div class="carousel-track">
+                    <img src="../../images/sponsors/climaton.png" alt="climaton">
+                    <img src="../../images/sponsors/Emblem_of_the_All-China_Youth_Federation.svg.png" alt=" Youth Federation">
+                    <img src="../../images/sponsors/Escudo-UNAM-escalable.png" alt="Escudo de la UNAM">
+                    <img src="../../images/sponsors/igemstartups.jpeg" alt="igem startups">
+                    <img src="../../images/sponsors/uniceflogo.png" alt="unicef logo">
+                    <img src="../../images/sponsors/ciencias.webp" alt="Logotipo de la Facultad de Ciencias de la UNAM">
+                    <!-- Repetimos las mismas imágenes para efecto de bucle -->
+                    <img src="../../images/sponsors/climaton.png" alt="climaton">
+                    <img src="../../images/sponsors/Emblem_of_the_All-China_Youth_Federation.svg.png" alt=" Youth Federation">
+                    <img src="../../images/sponsors/Escudo-UNAM-escalable.png" alt="Escudo de la UNAM">
+                    <img src="../../images/sponsors/igemstartups.jpeg" alt="igem startups">
+                    <img src="../../images/sponsors/uniceflogo.png" alt="unicef logo">
+                    <img src="../../images/sponsors/ciencias.webp" alt="Logotipo de la Facultad de Ciencias de la UNAM">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/bootstrap.js"></script>
+</body>
+</html>

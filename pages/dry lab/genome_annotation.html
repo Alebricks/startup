@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mission & Vision - Alebricks</title>
+    <title>Genome Annotation - Alebricks</title>
     <link href="../../css/bootstrap.css" rel="stylesheet">
     <link href="../../css/general.css" rel="stylesheet">
 </head>
@@ -25,8 +25,8 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./members.html"> Members</a></li>
-                                    <li><a class="dropdown-item" href="./mission_vision.html">Mission & Vision</a></li>
+                                    <li><a class="dropdown-item" href="../about/members.html"> Members</a></li>
+                                    <li><a class="dropdown-item" href="../about/mission_vision.html">Mission & Vision</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -70,13 +70,13 @@
                                     Dry Lab
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../../pages/dry lab/Overview.html">Overview</a></li>
-                                    <li><a class="dropdown-item" href="../../pages/dry lab/genome_annotation.html">Genome annotation</a></li>
-                                    <li><a class="dropdown-item" href="../../pages/dry lab/differential-expression-analysis.html">Differential expression analysis</a></li>
-                                    <li><a class="dropdown-item" href="../../pages/dry lab/docking.html">Docking</a></li>
-                                    <li><a class="dropdown-item" href="../../pages/dry lab/alternative-enzymes-selection.html">Alternative enzymes selection</a></li>
-                                    <li><a class="dropdown-item" href="../../pages/dry lab/docking-mds.html">Docking and MDS</a></li>
-                                    <li><a class="dropdown-item" href="../../pages/dry lab/model.html">Math-Model</a></li>
+                                    <li><a class="dropdown-item" href="./Overview.html">Overview</a></li>
+                                    <li><a class="dropdown-item" href="./genome_annotation.html">Genome annotation</a></li>
+                                    <li><a class="dropdown-item" href="./differential-expression-analysis.html">Differential expression analysis</a></li>
+                                    <li><a class="dropdown-item" href="./docking.html">Docking 1</a></li>
+                                    <li><a class="dropdown-item" href="./alternative-enzymes-selection.html">Alternative enzymes selection</a></li>
+                                    <li><a class="dropdown-item" href="./docking-mds.html">Docking and MDS</a></li>
+                                    <li><a class="dropdown-item" href="./model.html">Math-Model</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -133,22 +133,62 @@
         </div>
     </div> <!-- End Container NavBar-->
 
-    <div class="container">
-        <h1 class="h1 pt-5 mt-5 ms-5" style="color: #ec008c;">Mission</h1>
-        <!-- <h2 class="m-3" style="color: #ec008c;">Apartado</h2> -->
-        <div class="row justify-content-center text-center">
-            <p class="h3 col-12 col-lg-8">Implement a biopesticide produced with synthetic biology that fights the fall armyworm with a lower environmental impact than conventional pesticides, protecting the health of farmers and avoiding losses in corn crops in Mexico.</p>
-            <img class="col-12 col-lg-4" src="../../images/about/mission_n_vission/mission-accomplished.png" alt="Mission" style="max-width:200px; max-height: 2000px;">
+    <div class="container my-5"> <!-- Body -->
+        <div class="row mb-4">
+            <div class="col text-center">
+                <h1 class="display-4">Genome Annotation</h1>
+            </div>
         </div>
-        <h1 class="h1 mt-5 ms-5" style="color: #ec008c;">Vision</h1>
-        <!-- <h2 class="m-3" style="color: #ec008c;">Apartado</h2> -->
-        <div class="row justify-content-center text-center my-5">
-            <img class="col-l2 col-lg-4" src="../../images/about/mission_n_vission/vision.png" alt="Vision" style="max-width:200px; max-height: 2000px;">
-            <p class="h3 col-12 col-lg-8 text">Lead the future with bio-based solutions, engineering nature for sustainable, healthier, and affordable innovations across sectors.</p>
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5 class="card-title">Genome Annotation</h5>
+                <p class="card-text text-justify">Hu et al. 2019 provided the first ever reference genome of P. nigrum, with
+                    761.2 Mb assembled in 26 pseudochromosomes. The genes assembled in this project were not annotated for
+                    protein function; in order to know the function of the different genes of P. nigrum, we performed two
+                    different annotation analyses. One analysis was performed using KofamKOALA, which is a KEGG ortholog
+                    assignment tool based on profile HMM and adaptive score threshold. With this annotation, a complete
+                    metabolome reconstruction was made using KEGG mapper reconstruct tool. The genes were annotated to 3803
+                    different KEGG orthology IDs; 948 of these IDs were part of the metabolic pathways present in the KEGG
+                    database (ID: 01100). The complete modules of the metabolic pathways are shown in the next figure.</p><img
+                    src="../../images/dry lab/genome annotation/genome-annotation-1.png" alt="Genome annotation img 1"
+                    class="img-fluid"><br>
+                <p class="mt-20 card-text text-justify">We found 455 different KEGG orthology IDs for biosynthesis of secondary
+                    metabolites pathways (ID: 01110), this can be seen in the next figure.</p><br><img
+                    src="../../images/dry lab/genome annotation/genome-annotation-2.png" alt="Genome annotation img 2"
+                    class="img-fluid">
+                <p class="card-text text-justify">Some of the more interesting pathways for this project are the phenylpropanoid
+                    biosynthesis pathway (ID: 00940) and the tropane, piperidine and pyridine alkaloid biosynthesis pathway (ID:
+                    00960). We show the phenylpropanoid biosynthesis pathway, where some enzymes required to obtain ferulic acid
+                    from phenylalanine are shown in green; these are KEGG orthology IDs to which some genes from P. nigrum have
+                    been annotated.</p><img src="../../images/dry lab/genome annotation/genome-annotation-3.png"
+                    alt="Genome annotation img 3" class="img-fluid">
+                <p class="card-text text-justify">In the case of the piperidine and pyridine alkaloid biosynthesis pathway, this
+                    information is shown in the next figure. In this case, the enzyme of interest is a primary-amine oxidase
+                    that performs the reaction that converts cadaverine into 5-Aminopentanal.</p><img
+                    src="../../images/dry lab/genome annotation/genome-annotation-4.png" alt="Genome annotation img 4"
+                    class="img-fluid">
+                <p class="card-text text-justify">From this annotation, some genes were found that corresponded to the KEGG
+                    orthology IDs responsible for performing some steps of the pathway. Pn8.2617 was annotated as a
+                    phenylalanine ammonia-lyase, the first enzyme of the proposed pathway; this enzyme was selected as the best
+                    candidate for enzyme 1 because it obtained the highest score (1170.9) over the threshold (524.93) for KEGG
+                    Orthology ID K10775, with E-value ≊ 0. The second enzyme of the pathway was also found in this way. Pn2.84
+                    was selected as the best candidate for enzyme two of the proposed pathway based on the fact that it obtained
+                    the highest score (985.2) over the threshold (555.2) for KEGG Orthology ID K00487, with E-value = 2.5 ×
+                    10<sup>−297</sup>. Pn1.1317 was selected as the best candidate for enzyme number four based on the fact that
+                    it obtained the highest score (651.5) over the threshold (499.33) for KEGG Orthology ID K13066, with E-value
+                    = 2.9 × 10<sup>−196</sup>. The eighth enzyme of the reaction, Pn4.3222, was selected based on the fact that
+                    it obtained the highest score (889) over the threshold (550.3) for KEGG Orthology ID K00276, with E-value =
+                    2 × 10<sup>−267</sup>.</p>
+                <p class="card-text text-justify">The second annotation method used was the GeneFamilyClassifier tool, which is
+                    part of PlantTribes, a gene and gene family resource for comparative genomics in plants; this analysis was
+                    performed using the Galaxy project platform, a platform for accessible, reproducible and collaborative
+                    biomedical analyses. 45,155 genes were annotated for AHRD, TAIR, Pfam domains, InterProScan Descriptions, GO
+                    Molecular Functions, Biological Processes and Cellular Components.</p>
+            </div>
         </div>
-    </div> <!-- End Container -->
+    </div> <!-- End Body -->
 
-    <footer style="background-color: #F5F5F5;" >
+    <footer style="background-color: #F5F5F5;" > <!-- Footer -->
         <div class="container">
             <h2 class="text-center" style="padding-top: 50px;">Partners</h2>
             <p>The companies and organizations that supported us:</p>

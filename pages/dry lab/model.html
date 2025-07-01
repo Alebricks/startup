@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Model - Alebricks</title>
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/general.css" rel="stylesheet">
+</head>
+<body>
+    <div style="background-color: #F8F9FA;">
+        <div class="container"> <!-- NavBar-->
+            <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../../index.html">Alebricks</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../about/members.html"> Members</a></li>
+                                    <li><a class="dropdown-item" href="../about/mission_vision.html">Mission & Vision</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Project
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../project/description.html">Description</a></li>
+                                    <li><a class="dropdown-item" href="../project/roadmap.html">Roadmap</a></li>
+                                    <li><a class="dropdown-item" href="../project/engineering_success.html">Engineering success</a></li>
+                                    <li><a class="dropdown-item" href="../project/business_model.html">Business model</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Safety
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../safety/biosafety.html">Biosafety & Biosecurity</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Wet & Field Lab
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Parts</a></li>
+                                    <li><a class="dropdown-item" href="#">Design</a></li>
+                                    <li><a class="dropdown-item" href="#">Citotoxicity</a></li>
+                                    <li><a class="dropdown-item" href="#">Phytotoxicity</a></li>
+                                    <li><a class="dropdown-item" href="#">Field Tests</a></li>
+                                    <li><a class="dropdown-item" href="#">Future perspectives and troubleshooting</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dry Lab
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./Overview.html">Overview</a></li>
+                                    <li><a class="dropdown-item" href="./genome_annotation.html">Genome annotation</a></li>
+                                    <li><a class="dropdown-item" href="./differential-expression-analysis.html">Differential expression analysis</a></li>
+                                    <li><a class="dropdown-item" href="./docking.html">Docking</a></li>
+                                    <li><a class="dropdown-item" href="./alternative-enzymes-selection.html">Alternative enzymes selection</a></li>
+                                    <li><a class="dropdown-item" href="./docking-mds.html">Docking and MDS</a></li>
+                                    <li><a class="dropdown-item" href="./model.html">Math-Model</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Human Practices
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Human Practices</a></li>
+                                    <li><a class="dropdown-item" href="#">Integrated Human Practices</a></li>
+                                    <li><a class="dropdown-item" href="#">Diversity and Inclusivity</a></li>
+                                    <li><a class="dropdown-item" href="#">Education</a></li>
+                                    <li><a class="dropdown-item" href="#">Philosophy and episthemology</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ARTS & DESIGN
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                    <li><a class="dropdown-item" href="#">Videogame</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    AKNOWLEDGEMENTS
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Attributions</a></li>
+                                    <li><a class="dropdown-item" href="#">Sponsors</a></li>
+                                    <li><a class="dropdown-item" href="#">Crowdfunding</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Sustainable development
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Ecological Niche Modeling</a></li>
+                                    <li><a class="dropdown-item" href="#">SDG's</a></li>
+                                    <li><a class="dropdown-item" href="#">Negative Impact</a></li>
+                                    <li><a class="dropdown-item" href="#">Why to protect maize?</a></li>
+                                    <li><a class="dropdown-item" href="#">Climaton</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div> <!-- End Container NavBar-->
+
+    <div class="container my-5"> <!-- Body -->
+        <h1 class="text-center my-4 pt-5">Math Model</h1>
+        <h2 class="my-4">Part I: Understanding the dynamics of piperamide synthesis</h2>
+        <p>To gain a deep understanding of how a biological system functions, a system of Ordinary Differential Equations (ODEs)
+            offers an excellent approach. Additionally, since we aim to design a novel biosynthetic pathway, modeling the
+            emerging circuit is crucial for deepening our insights and addressing fundamental questions about its behavior.</p>
+        <ul>
+            <li>What are the inherent limitations of our production system?</li>
+            <li>What are the critical steps for optimization?</li>
+            <li>Are there alternative, more efficient ways to synthesize our product?</li>
+        </ul>
+        <p>However, every model involves certain assumptions. In this case, we approach the problem using mass-action kinetics,
+            which assumes that enzyme saturation is not a limiting factor. This assumption holds true primarily at low
+            metabolite concentrations. Therefore, our model is a simplification compared to more detailed frameworks like
+            Michaelis-Menten kinetics, which accounts for enzyme saturation. Both mass-action and Michaelis-Menten kinetics can
+            describe dynamic equilibria. For our purposes, this simplification is justified, as we are more concerned with the
+            overall system behavior than the finer details introduced by enzyme saturation.</p>
+        <p>With that foundation, let’s review our biological challenge:</p>
+        <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-1.png"
+                alt="Diagram related to the biosynthetic pathway of piperamide" class="img-fluid"></div>
+        <p>Although our long-term goal is to reproduce the entire pathway for synthesizing piperamide (P), it is relatively
+            cost-effective to simplify the process by introducing Ferulic Acid (F) and Piperidine (R) directly into the medium
+            and expressing only the downstream enzymes. This serves as a substitute for the production of intermediates by the
+            earlier enzymes. In this simplified setup, we focus on just three enzymes: E5, which catalyzes reaction 1,
+            converting F into Methylenedioxycinnamic acid (M); E6, responsible for reaction 2, which converts M into
+            Methylenedioxycinnamoyl-CoA (C); and finally, E11, which facilitates reaction 3, combining C and R to produce
+            Piperamide (P). We assume that these reactions are reversible and governed by specific kinetic constants (K's).
+            Also, we will use a simplified version where the reverse constants are equal to 0.5 while the forward values are 1.
+        </p>
+        <h3 class="my-4">Here comes the algebra</h3>
+        <p>This process can be expressed with a system of ODEs as follows:</p>
+        <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-2.png"
+                alt="ODE system equations" class="img-fluid"></div>
+        <p>To simplify the model, we will make a couple of key assumptions. First, we assume that the enzyme concentrations for
+            E5, E6, and E11 are identical, which is reasonable since the same promoter drives their expression. Second, we
+            assume that these enzymes have reached equilibrium, meaning their concentrations remain constant rather than
+            dynamic. This assumption holds since we are using a constitutive promoter that has been producing these proteins
+            continuously from the start. To further streamline the system, we normalize by setting the enzyme concentrations
+            equal to one, leaving the dynamics dependent solely on their kinetic constants and the concentrations of the
+            metabolites.</p>
+        <p>With this system in place, we are now ready to begin exploring the key questions it raises.</p>
+        <h3 class="my-4">Equilibrium behavior</h3>
+        <p>A valuable approach to understanding a system is to identify its equilibrium points. These are the specific
+            combinations of variables (in this case, metabolite concentrations) where there is no net change, meaning the
+            concentrations remain constant over time. Equilibrium points often correspond to attractors, repulsors, or other
+            types of topological structures within the system. To find them, we set each ordinary differential equation (ODE) to
+            zero, indicating no change, and denote the equilibrium state with an asterisk next to the variables.</p>
+        <p>Upon calculating these points, we observe that our equilibrium points are interdependent, meaning the system lacks a
+            single universal equilibrium point that it consistently converges to. Instead, we encounter an equilibrium surface.
+            For instance, when examining the equation for P*, it becomes clear that the system has as many equilibrium points as
+            multiples of F* and R*—in other words, infinitely many equilibrium points!</p>
+        <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-3.png"
+                alt="Equilibrium behavior graph" class="img-fluid"></div>
+        <p>We can further explore this idea using a linearization approach. By computing the Jacobian matrix and analyzing its
+            trace (τ) and determinant (Δ) at the equilibrium points, we can interpret the system's topological behavior near
+            equilibrium. This analysis helps us determine the stability and nature of the equilibrium points, such as whether
+            they act as attractors, repulsors, or exhibit more complex dynamics like oscillations. The results are as follows:
+        </p>
+        <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-4.png"
+                alt="Jacobian matrix analysis" class="img-fluid"></div>
+        <p>The most significant result is that, since the last two columns of the Jacobian matrix are linearly dependent, its
+            determinant is zero. This indicates that the system does not possess isolated equilibrium points; instead, it
+            features a degenerate node. This topological structure stems from the interdependency of the equilibrium states,
+            supporting the idea that equilibrium can be maintained along a line or surface within the metabolite concentration
+            space.</p>
+        <p>Moreover, although the node is degenerate, the fact that the trace is negative—since all constants and variables in
+            the model are positive—suggests that the system exhibits stability in certain directions, allowing perturbations to
+            return to equilibrium along those paths.</p>
+        <p>This aligns well with biological expectations in metabolic systems. When a small amount of substrates is added, the
+            system should reach equilibrium, albeit at a lower concentration than if a greater amount had been introduced. In
+            the following figure, we explore this equilibrium surface, showcasing the interaction between Piperidine, Ferulic
+            Acid, and Piperamide, forming a surface that peaks when Piperidine and Ferulic Acid reach their maximum
+            concentrations.</p>
+        <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-5.png"
+                alt="Equilibrium surface plot" class="img-fluid"></div>
+        <div class="container">
+            <h3 class="my-4">How to interpret equilibrium biologically?</h3>
+            <p>As mentioned earlier, equilibrium refers to a state where there is no change in the variables over time.
+                Biologically, this signifies a balance in metabolic processes, where the rates of production and consumption of
+                metabolites are equal. At equilibrium, the concentrations of the substances involved remain constant,
+                representing a stable condition within the system. In non-engineered biological systems, stability is key for
+                maintaining cellular functions, influenced by factors such as enzyme activity, substrate availability, and
+                feedback mechanisms.</p>
+            <p>However, our system serves a different purpose: production. Our goal is to maximize the output of piperamide, yet
+                this is biologically constrained by equilibrium, as production will naturally level off after a certain period.
+                Thus, in our context, equilibrium represents the final production yield of piperamide.</p>
+            <p>With this perspective, we can treat our cells as a function, where the initial concentrations of ferulic acid (F)
+                and piperidine (R) act as inputs (since the concentrations of the other metabolites are initially zero—these
+                compounds cannot be synthesized without the precursors). The cells then "compute" the equilibrium concentration
+                of piperamide (P) for a given combination of F and R. By simulating this system through the integration of our
+                ODEs across various input combinations, we can generate a surface showing that higher initial concentrations of
+                F and R generally yield more piperamide. However, this increase is constrained, as discussed in the
+                "Cytotoxicity" section of our wiki, where we explore the biological limits imposed by other factors.</p>
+            <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-6.png"
+                    alt="Surface plot showing the relationship between concentrations" class="img-fluid"></div>
+            <p>The resulting surface plot demonstrates the relationship between the initial concentrations of ferulic acid (F)
+                and piperidine (R) and the consequent equilibrium concentration of piperamide (P). The plot reveals a non-linear
+                relationship, where increasing amounts of F and R lead to higher equilibrium levels of P, but with diminishing
+                returns as concentrations approach their maximum. This indicates that while both substrates positively influence
+                piperamide production, the kinetic constraints limit the maximum attainable concentration at equilibrium,
+                forming a curved plateau as shown in the plot.</p>
+        </div>
+        <div class="container">
+            <h2 class="my-4">Part II: What is the most efficient way to produce piperamides?</h2>
+            <p>One day, during lunch, our team started discussing how challenging it would be to engineer a yeast strain capable
+                of reproducing an entire transgenic pathway. Autotoxicity, protein aggregation, pleiotropy, and other issues
+                quickly came to mind—after all, a living organism is an incredibly complex, unpredictable system. Adding more
+                complexity to it would inevitably introduce more problems. We realized that making this project a reality would
+                require years of optimization at every step. Testing our enzymes individually, rather than all together, seemed
+                like the most logical first move. This raised an important question: why not focus on optimizing separate
+                strains using a division of metabolic labor approach?</p>
+            <p>It suddenly seemed so obvious to us that using a single strain would demand far more effort than splitting the
+                pathway among several strains, each handling a portion of the metabolic workload and transferring metabolites
+                between them. However, we had no idea how efficient such systems could be. Transporting metabolites across the
+                cell membrane posed a particularly tricky challenge, as it limited the amount of metabolites available to each
+                cell.</p>
+            <p>What if, instead of using multiple cells, we utilized different containers for cell-free systems? This approach
+                would allow us to enjoy the benefits of a simplified system—no membrane barriers, fewer concerns about
+                intracellular interactions, and fewer unpredictable side effects. By eliminating these biological complexities,
+                we could focus purely on optimizing the production of piperamide.</p>
+            <p>Therefore, before embarking on such a long-term project, we faced a critical question: what is the most efficient
+                way to produce piperamide? Understanding this would be essential for determining whether a cell-free system,
+                multiple or single strains would yield the best results. As we will discuss, we were not sure which one could
+                produce more yield. We initially believed that each could outperform the others for various reasons. However, we
+                ultimately reached the clear conclusion that one was consistently the most efficient.</p>
+            <p>A mathematical model was our initial approach to address this question. Specifically, we developed three distinct
+                yet similar models, one for each alternative.</p>
+            <p>The Single-Strain System (SSS) is the model we previously described. In contrast, for the Multi-Strain System
+                (MSS), we utilized similar equations but decoupled the steps between different enzymes. In this model, we
+                simulated three separate cells, each expressing a different enzyme. When the desired metabolite reached
+                equilibrium in one cell, it was then transferred to the next cell expressing the subsequent enzyme. This
+                necessitated introducing a new type of reaction: across-membrane transport. Consequently, we incorporated
+                additional variables to represent the metabolite concentrations inside and outside the cell. We assumed that the
+                rates of transport into and out of the cell were equal for each metabolite. Finally, piperidine (R) was added as
+                an input to the last medium alongside the previous metabolite (C).</p>
+            <p>In the case of the compartmentalized Cell-Free System (CFS), we adopted a similar approach, but we did not
+                simulate the concentrations of metabolites inside or outside the system. Instead, three containers substitute
+                the three strains of the MSS.</p>
+            <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-7.png"
+                    alt="System comparison of SSS and MSS" class="img-fluid"></div>
+        </div>
+        <div class="container">
+            <h3 class="my-4">Multi-Strain Systems are less efficient than Single-Strain Systems</h3>
+            <p>We will use the following equations to prove the stated fact:</p>
+            <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-8.png"
+                    alt="Equations proving inefficiency of Multi-Strain Systems" class="img-fluid"></div>
+            <p>The procedure to demonstrate that the MSS yields less piperamide than the SSS is relatively straightforward. The
+                core concept is based on the principle of mass conservation: since the total mass distributed across metabolites
+                must equal the initial inputs of F and R, we can derive Equation 1. Here, m represents mass, and the subscripts
+                "o" and "i" refer to the "outside the cell" and "inside the cell" compartments, respectively. We use the
+                subscripts MSS and SSS to refer to parameters proper to the corresponding models. Notice that the amount of P is
+                twice the other metabolites, since this balances the fact that two metabolites (C + R) are required to produce a
+                single molecule of piperamide.</p>
+            <p>It’s important to note that piperamide production requires equal amounts of R∗ and C∗, where C∗ depends on both
+                F∗ and M∗. This relationship is shown in Equation 2a, which establishes that when F∗, M∗, and C∗ reach
+                equilibrium, their combined sum equals R∗. When substituting the equilibrium values for M∗ and C∗ in terms of
+                F∗, we obtain Equation 2b. From 2a, we derive Equation 3, which expresses P∗ (the piperamide concentration at
+                equilibrium) in terms of total mass and R∗. The result indicates that as R∗ increases, P∗ decreases.</p>
+            <p>A similar approach applies to the SSS. Equation 4 corresponds to Equation 1 in this system, where all metabolites
+                are contained within the cell. Consequently, the equivalent of Equation 2 for the SSS is given by Equation 5.
+                Since Equation 3 is more general, it applies to both systems. However, it becomes clear that Equation 2b yields
+                a larger value for R∗ compared to Equation 5b. Thus, when comparing the substitution of Equation 3 using the
+                values from 2b and 5b, as shown in Inequation 6, it becomes evident that the MSS consistently produces less
+                piperamide than the SSS. However, we treated F as the same amount for both the MSS and SSS, which is incorrect.
+                We will prove in the following section that F is greater for the MSS, thereby concluding this demonstration.</p>
+            <p>Biologically, this can be interpreted to mean that no matter how efficient the equilibrium points are for each
+                metabolite in the MSS or the nature of their enzyme’s kinetic constants, there will always be a portion of the
+                metabolite that is lost outside the cell. And this loss is always decreasing the maximum yield when compared to
+                the SSS.</p>
+            <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-9.png"
+                    alt="Simulation of SSS and MSS" class="img-fluid"></div>
+            <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-10.png"
+                    alt="Further simulations demonstrating the inefficiency of MSS" class="img-fluid"></div>
+        </div>
+        <div class="container">
+            <h3 class="my-4">Cell-Free Systems are less efficient than Single-Strain Systems</h3>
+            <p>Initially, we strongly believed that compartmentalized CFS would be more efficient than a SSS. When modeling the
+                latter, we observed that increasing the number of metabolites in the pathway decreased the piperamide output.
+                For instance, adding an additional enzyme to produce F caused the equilibrium to distribute across more
+                metabolites, with some mass retained by the new metabolite that would not be used to produce piperamide. Our
+                reasoning was that in a CFS, this wouldn’t be an issue, as each individual container with its respective enzyme
+                would reach maximum equilibrium independently.</p>
+            <p>However, this assumption was incorrect. To prove this, we will adopt a complementary approach to the previous, in
+                order to demonstrate that the amount of F consumed is greater in the SSS than in the CFS, meaning less F is
+                wasted in the SSS.</p>
+            <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-11.png"
+                    alt="Equilibrium comparison between CFS and SSS" class="img-fluid"></div>
+            <p>In Equation 1, we depict F at equilibrium in a CFS. Since the first compartment of the CFS contains only one
+                enzyme, just two metabolites—F and M—are involved. M at equilibrium can be expressed in terms of the initial
+                concentration F₀ and the equilibrium concentration of F, as shown in Equation 2. Combining Equations 1 and 2, we
+                derive Equation 3, which expresses F at equilibrium as a fraction of F₀.</p>
+            <p>In contrast, the mass distribution in the SSS is depicted in Equation 4a. It shows that the initial amount of F
+                is distributed across all metabolites, but their total mass remains constant. At equilibrium, this distribution
+                can be reformulated in terms of F and R, as in Equation 4b. We then arrive at Equation 5, a similar expression
+                to Equation 3, where F is also a fraction of F₀.</p>
+            <p>When comparing Equation 3 with Equation 5, since the dissociation constants (Kd's) are less than one, and as R*,
+                they are always positive, it becomes evident that the equilibrium concentration of F is lower in the SSS than in
+                the CFS. Thus, the SSS retains less mass in F, using more of it to produce piperamide. The same approach of the
+                previous section can be used here to show that P* is less in the CFS. Similarly, a parallel analysis shows that
+                F is also lower in equilibrium in the MSS, thus completing the previous section’s demonstration.</p>
+            <p>The interpretation of this proof is that in a CFS, the production of M limits the consumption of F, leading to an
+                earlier equilibrium. In contrast, in the SSS, M is consumed as it is produced, which mitigates the limitation on
+                F consumption. In the next figure, it can be seen that a lot of F is retained in the first container.</p>
+            <div class="text-center my-4"><img src="../../images/dry lab/model/mathmodel-12.png"
+                    alt="Simulation showing F retention in CFS" class="img-fluid"></div>
+            <p>Also, it is important to consider that this model does not take volumes and diffusion into account, which is the
+                same as assuming that there is a perfect transfer between containers.</p>
+        </div>
+        <div class="container">
+            <h3 class="my-4">Conclusions</h3>
+            <p>The dynamic behavior of piperamide production within a SSS demonstrates several critical characteristics. The
+                system exhibits a stable equilibrium along a surface, allowing for perturbations to return to a steady state,
+                which corresponds to a stable production rate of piperamide. The production efficiency increases as the initial
+                concentrations of ferulic acid (F) and piperidine (R) are raised. However, this result is limited, since the
+                model does not consider enzyme saturation, so a more detailed formulation of the problem could help to better
+                understand the limits of piperamide production.</p>
+            <p>With the comparison of models and the evidence presented, the following conclusion arises: It is fundamentally
+                impossible to have a more efficient compartmentalization of metabolic labor than the same pathway in a single
+                compartment. The models suggest that the MSS suffers from losses due to the inefficiencies of metabolite
+                transport across cell membranes, and the CFS is limited by the premature equilibrium of intermediate metabolites
+                like methylenedioxycinnamic acid (M), which restricts the use of available ferulic acid (F).</p>
+            <p>However, while the SSS may be the most efficient model based on our mathematical models, there are several other
+                biological factors that fall outside their scope. These include pleiotropic effects resulting from the
+                expression of multiple enzymes in a single strain, which can lead to unintended interactions and metabolic
+                imbalances. Additionally, the increased metabolite concentration within the SSS can result in autotoxicity,
+                protein aggregation, and metabolic bottlenecks that further complicate scaling up the system. These challenges,
+                along with the inherent unpredictability of biological systems, must be taken into account when designing and
+                optimizing real-world systems for piperamide production. Thus, while SSS is the best approach according to these
+                models, practical considerations require a more holistic view to ensure the system's robustness and efficiency.
+            </p>
+            <p>As for our project, based on these results, we have chosen to implement a MSS initially. However, our long-term
+                goal is to transition towards a more optimized SSS.</p>
+        </div>
+    </div> <!-- End Body -->
+
+    <footer style="background-color: #F5F5F5;" > <!-- Footer -->
+        <div class="container">
+            <h2 class="text-center" style="padding-top: 50px;">Partners</h2>
+            <p>The companies and organizations that supported us:</p>
+        </div>
+        
+        <div class="footer-carousel">
+            <div class="carousel-wrapper">
+                <div class="carousel-track">
+                    <img src="../../images/sponsors/climaton.png" alt="climaton">
+                    <img src="../../images/sponsors/Emblem_of_the_All-China_Youth_Federation.svg.png" alt=" Youth Federation">
+                    <img src="../../images/sponsors/Escudo-UNAM-escalable.png" alt="Escudo de la UNAM">
+                    <img src="../../images/sponsors/igemstartups.jpeg" alt="igem startups">
+                    <img src="../../images/sponsors/uniceflogo.png" alt="unicef logo">
+                    <img src="../../images/sponsors/ciencias.webp" alt="Logotipo de la Facultad de Ciencias de la UNAM">
+                    <!-- Repetimos las mismas imágenes para efecto de bucle -->
+                    <img src="../../images/sponsors/climaton.png" alt="climaton">
+                    <img src="../../images/sponsors/Emblem_of_the_All-China_Youth_Federation.svg.png" alt=" Youth Federation">
+                    <img src="../../images/sponsors/Escudo-UNAM-escalable.png" alt="Escudo de la UNAM">
+                    <img src="../../images/sponsors/igemstartups.jpeg" alt="igem startups">
+                    <img src="../../images/sponsors/uniceflogo.png" alt="unicef logo">
+                    <img src="../../images/sponsors/ciencias.webp" alt="Logotipo de la Facultad de Ciencias de la UNAM">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/bootstrap.js"></script>
+</body>
+</html>
