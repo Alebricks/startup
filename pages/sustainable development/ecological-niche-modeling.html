@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecological Niche Modeling - Alebricks</title>
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/general.css" rel="stylesheet">
+</head>
+<body>
+    <div style="background-color: #F8F9FA;">
+        <div class="container"> <!-- NavBar-->
+            <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../../index.html">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../about/members.html"> Members</a></li>
+                                    <li><a class="dropdown-item" href="../about/mission_vision.html">Mission & Vision</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Project
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../project/description.html">Description</a></li>
+                                    <li><a class="dropdown-item" href="../project/roadmap.html">Roadmap</a></li>
+                                    <li><a class="dropdown-item" href="../project/engineering_success.html">Engineering success</a></li>
+                                    <li><a class="dropdown-item" href="../project/business_model.html">Business model</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Safety
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../safety/biosafety.html">Biosafety & Biosecurity</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Wet & Field Lab
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../wet and field lab/contribution.html">Contribution</a></li>
+                                    <li><a class="dropdown-item" href="../wet and field lab/design.html">Design</a></li>
+                                    <li><a class="dropdown-item" href="../wet and field lab/citotoxicity.html">Citotoxicity</a></li>
+                                    <li><a class="dropdown-item" href="../wet and field lab/phytotoxicity.html">Phytotoxicity</a></li>
+                                    <li><a class="dropdown-item" href="../wet and field lab/field test.html">Field Tests</a></li>
+                                    <li><a class="dropdown-item" href="../wet and field lab/notebook.html">Notebook</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dry Lab
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../dry lab/Overview.html">Overview</a></li>
+                                    <li><a class="dropdown-item" href="../dry lab/genome_annotation.html">Genome annotation</a></li>
+                                    <li><a class="dropdown-item" href="../dry lab/differential-expression-analysis.html">Differential expression analysis</a></li>
+                                    <li><a class="dropdown-item" href="../dry lab/docking.html">Docking</a></li>
+                                    <li><a class="dropdown-item" href="../dry lab/alternative-enzymes-selection.html">Alternative enzymes selection</a></li>
+                                    <li><a class="dropdown-item" href="../dry lab/docking-mds.html">Docking and MDS</a></li>
+                                    <li><a class="dropdown-item" href="../dry lab/model.html">Math-Model</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Human Practices
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../human practices/human practices.html">Human Practices</a></li>
+                                    <li><a class="dropdown-item" href="../human practices/human.html">Human</a></li>
+                                    <li><a class="dropdown-item" href="../human practices/Diversity and Inclusivity.html">Diversity and Inclusivity</a></li>
+                                    <li><a class="dropdown-item" href="../human practices/Education.html">Education</a></li>
+                                    <li><a class="dropdown-item" href="../human practices/Philosophy and episthemology.html">Philosophy and episthemology</a></li>
+                                    <li><a class="dropdown-item" href="../human practices/Reach.html">Reach</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Arts & Design
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../arts and design/gallery.html">Gallery</a></li>
+                                    <li><a class="dropdown-item" href="../arts and design/videogame.html">Videogame</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Aknowledgements
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../aknowledgements/attributions.html">Attributions</a></li>
+                                    <li><a class="dropdown-item" href="../aknowledgements/crowdfunding.html">Crowdfunding & Sponsors</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Sustainable development
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./sustainable.html">Sustainable</a></li>
+                                    <li><a class="dropdown-item" href="./why-protect-maize.html">Why to protect maize?</a></li>
+                                    <li><a class="dropdown-item" href="./negative-impact.html">Negative Impact</a></li>
+                                    <li><a class="dropdown-item" href="./climaton.html">Climaton</a></li>
+                                    <li><a class="dropdown-item" href="./ecological-niche-modeling.html">Ecological Niche Modeling</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div> <!-- End Container NavBar-->
+
+    <div class="container my-5 pt-4"> <!-- Body -->
+        <section id="introduction" class="mb-4">
+            <h1 class="title">Ecological Niche Modeling</h1>
+            <p><strong>Piper nigrum</strong> is naturally distributed in India in the Western Ghats biodiversity hotspot and
+                other parts of Asia. This distribution is a result of the realized ecological niche of the plant, which refers
+                to the places where the plant is actually found and thrives. However, there are many other places where this
+                crop could grow, which would be its fundamental ecological niche.</p>
+            <p>The ecological niche modeling approach has been used to predict the fundamental and potential geographic
+                distribution of black pepper before. HAO et al. (2012) predicted the potential geographic distribution of Piper
+                nigrum using the maximum entropy algorithm. The analysis predicted these areas successfully and was found useful
+                in applications such as crop introduction and conservation. Sen et al. 2016 used this same methodology and
+                algorithm to study the impact of climate change on black pepper in Western Ghats, India. Similar approaches have
+                been used for the modeling of the ecological niche of the pest Spodoptera frugiperda and its distribution in
+                future scenarios (Zacarias, 2020).</p>
+        </section>
+        <section id="methodology" class="mb-4">
+            <h2 class="subtitle">Methodology</h2>
+            <p>In order to model the ecological niche of <em>P. nigrum</em> and <em>Spodoptera frugiperda</em> the 19
+                bioclimatic variables of WorldClim version 2.1 were used at a resolution of 2.5 minutes. The occurrences data
+                were obtained from the Global Biodiversity Information Facility (GBIF) database. The ecological niche modeling
+                was made using the Maximun Entropy (Maxent) algorithm described by Phillips et al. 2006; it is a machine
+                learning method well suited for prediction of the distribution of species with presence-only data. The model
+                used a 30% presence data points as test dataset and the resting data points as the training dataset, bootstrap
+                was performed with 1000 iterations. The resulting model was projected on future bioclimatic variables under
+                different scenarios, the scenarios ssp126, ssp245, ssp370 and ssp585 for the periods 2021-2040, 2041-2060,
+                2061-2080 and 2081-2100 for each scenario, these were obtained from the Australian Community Climate and Earth
+                System Simulator Coupled Model 2 (ACCESS-CM2).</p>
+        </section>
+        <section id="results" class="mb-4">
+            <h2 class="subtitle">Results</h2>
+            <div id="spodoptera-frugiperda" class="result-section mb-4">
+                <h3 class="section-title">Spodoptera frugiperda</h3>
+                <p>The next plot shows the receiver operating curve (ROC) for training and test data, along with the area under
+                    the curve (AUC). In this case the AUC is bigger than 0.85 for both training and test datasets, indicating a
+                    good performance of the model.</p>
+                <div class="text-center"><img
+                        src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-1.png"
+                        alt="ROC curve for Spodoptera frugiperda" class="img-fluid my-3"></div>
+            </div>
+            <p>In order to know which variables are the most important when predicting the ecological niche of the fall
+                armyworm, a jackknife analysis was performed. For this analysis, a model excluding every variable at once and
+                also a model using only that variable was created and evaluated using training gain, test gain, and AUC.</p>
+            <p>In the next figures, we can see that the most important bioclimatic variables to predict the distribution of
+                <em>S. frugiperda</em> are bioclimatic variables 1 and 9 consistently on the three plots; these variables are
+                Annual Mean Temperature and Mean Temperature of Driest Quarter. Other variables were important only when looking
+                at the test, training, or AUC, like bioclimatic variables 6, 11, 12, and 17.</p>
+            <div class="text-center"><img
+                    src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-2.png"
+                    alt="Jackknife analysis for Spodoptera frugiperda" class="img-fluid my-3"><img
+                    src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-3.png"
+                    alt="Jackknife analysis for Spodoptera frugiperda" class="img-fluid my-3"><img
+                    src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-4.png"
+                    alt="Jackknife analysis for Spodoptera frugiperda" class="img-fluid my-3"></div>
+            <p>In the next plots, the response of the fall armyworm to the different bioclimatic variables is shown, whether it
+                is only considering the bioclimatic variable independently or as part of the ecological niche model.</p>
+            <h4 class="section-subtitle">Response to Bioclimatic Variables Individually</h4>
+            <div class="text-center"><img
+                    src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-5.png"
+                    alt="Response to bioclimatic variables" class="img-fluid my-3"></div>
+            <h4 class="section-subtitle">Response to Bioclimatic Variables as Part of the Model</h4>
+            <div class="text-center"><img
+                    src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-6.png"
+                    alt="Bioclimatic variables as part of the model" class="img-fluid my-3"></div>
+            <div id="piper-nigrum" class="result-section">
+                <p>The modeled potential ecological niche was projected on historical bioclimatic variables from WorldClim
+                    version 2.1. The figures below show the current and future projected distribution for both the world and
+                    Mexico.</p>
+                <div class="text-center"><img
+                        src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-7.png"
+                        alt="Ecological niche model for Piper nigrum" class="img-fluid my-3"><img
+                        src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-8.png"
+                        alt="Ecological niche model for Piper nigrum" class="img-fluid my-3"></div>
+                <p>In the same way, the model was projected on future scenarios for the ssp126, ssp245, ssp370, and ssp585 on
+                    different time intervals in the future.</p>
+                <p>The next figures represent the changes in the potential niche of <em>Spodoptera frugiperda</em> under the
+                    most conservative and aligned with the SDGs scenario (ssp126) and the worst case scenario regarding climate
+                    change (ssp585) for the world and Mexico.</p>
+                <div class="text-center"><img
+                        src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-9.gif"
+                        alt="ssp126 vs ssp585" class="img-fluid my-3"><img
+                        src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-10.gif"
+                        alt="ssp126 vs ssp585" class="img-fluid my-3"><img
+                        src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-11.gif"
+                        alt="ssp126 vs ssp585" class="img-fluid my-3"></div>
+                <p>In order to see the impact of climate change, another layout view was created in which we subtract the niche
+                    suitability for the fall armyworm under the ssp126 scenario from the ssp585 scenario.</p>
+                <p>In this case, the resulting positive values mean higher habitat suitability, and negative values mean lower
+                    suitability under the ssp585 scenario.</p>
+                <div class="text-center"><img
+                        src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-12.gif"
+                        alt="ssp126 vs ssp585" class="img-fluid my-3"><img
+                        src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-13.gif"
+                        alt="ssp126 vs ssp585" class="img-fluid my-3"></div>
+                <p>With these results, we can see that there will be a change in the potential distribution of the fall armyworm
+                    in all future modeled scenarios, but most importantly in the biggest corn-producing regions. The USA is the
+                    biggest producer, and also one of the countries in which the ecological niche would be most clearly affected
+                    by climate change in the future. This is an important point since the higher habitat suitability could
+                    diminish the crop yield, potentially reducing both the production and supply of this valuable crop.</p>
+                <p>This is a strong indicator that effective measures need to be taken to prevent significant changes in the
+                    structure of the market dynamics for this important crop. Actions could focus not only on the prevention of
+                    climate change but also on controlling this significant agricultural pest.</p>
+            </div>
+        </section>
+        <section id="Piper nigrum" class="mb-4">
+            <h2 class="subtitle">Piper nigrum</h2>
+            <p>The next plot shows the receiver operating curve (ROC) for training and test data, along with the area under the
+                curve (AUC). In this case, the AUC is bigger than 0.9 for both training and test datasets, indicating the high
+                performance of the model.</p>
+            <div class="text-center"><img
+                    src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-14.png"
+                    alt="ssp126 vs ssp585" class="img-fluid my-3"></div>
+            <p>In order to know which variables are the most important when predicting the ecological niche of black pepper, a
+                jackknife analysis was performed. For this analysis, a model excluding every variable at once and also a model
+                using only that variable was created and evaluated using training gain, test gain, and AUC.</p>
+            <p>In the next figures, we can see that the most important bioclimatic variables to predict the distribution of
+                <em>P. nigrum</em> are bioclimatic variables 6, 7, 12, 13, and 16 consistently on the three plots. These results
+                are consistent with HAO et al. 2012, who found the same five variables as the most informative ones when
+                predicting the potential niche in Asia for black pepper.</p>
+            <div class="text-center"><img
+                    src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-15.png"
+                    alt="ssp126 vs ssp585" class="img-fluid my-3"><img
+                    src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-16.png"
+                    alt="ssp126 vs ssp585" class="img-fluid my-3"><img
+                    src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-17.png"
+                    alt="ssp126 vs ssp585" class="img-fluid my-3"></div>
+            <p>In the next plots, the response of black pepper to the different bioclimatic variables is shown, whether it is
+                only considering the bioclimatic variable independently or as part of the ecological niche model.</p>
+            <h5 class="subtitle">Response to Bioclimatic Variables Individually</h5>
+            <div class="text-center"><img
+                    src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-18.png"
+                    alt="Response to bioclimatic variables individually" class="img-fluid my-3"></div>
+            <h5 class="subtitle">Response to Bioclimatic Variables as Part of the Ecological Niche Model</h5>
+            <div class="text-center"><img
+                    src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-19.png"
+                    alt="Response to bioclimatic variables in the model" class="img-fluid my-3"></div>
+            <p>The modeled potential ecological niche was projected on historic bioclimatic variables obtained from WorldClim
+                version 2.1 and shown in the next figures for its current worldwide distribution and its distribution in Mexico.
+            </p>
+            <div class="text-center"><img
+                    src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-20.png"
+                    alt="ssp126 vs ssp585" class="img-fluid my-3"><img
+                    src="../../images/sustainable development/ecological-niche-modeling/ecological-niche-model-21.png"
+                    alt="ssp126 vs ssp585" class="img-fluid my-3"></div>
+            <p>In this figure, we can see that the main region where the ecological niche is projected is in the southeast of
+                the country, mainly in the states of Chiapas, Tabasco, Veracruz, and Oaxaca; which is consistent with the fact
+                that these are the states that currently present significant production of black pepper.</p>
+            <p>The states of interest (Michoacán, Jalisco, and Sinaloa) do not provide an appropriate environment for the growth
+                of this crop, so the production of piperine and related piperamides directly from the cultivation of <em>P.
+                    nigrum</em> in this region is not suitable.</p>
+        </section>
+        <section id="references" class="section">
+            <h2 class="subtitle">References</h2>
+            <ul class="references-list">
+                <li>Fielding, A. H. and Bell, J. F. (1997). A review of methods for the assessment of prediction errors in
+                    conservation presence/absence models. Environmental conservation, 24(1):38–49.</li>
+                <li>HAO, C.-y., et al. (2012). Modeling the potential geographic distribution of black pepper (Piper nigrum) in
+                    Asia using GIS tools. Journal of Integrative Agriculture, 11(4):593–599.</li>
+                <li>Lane, M. A. and Edwards, J. L. (2007). The global biodiversity information facility (gbif). Systematics
+                    Association special volume, 73:1.</li>
+                <li>Phillips, S. J., et al. (2006). Maximum entropy modeling of species geographic distributions. Ecological
+                    modelling, 190(3-4):231–259.</li>
+                <li>Sen, S., et al. (2016). Modeling the impact of climate change on wild piper nigrum in Western Ghats, India.
+                    Journal of plant research, 129(6):1033–1040.</li>
+                <li>Sillero, N. (2011). What does ecological modelling model? a proposed classification of ecological niche
+                    models based on their underlying methods. Ecological Modelling, 222(8):1343–1346.</li>
+                <li>Soberon, J. and Peterson, A. T. (2005). Interpretation of models of fundamental ecological niches and
+                    species’ distributional areas.</li>
+            </ul>
+        </section>
+    </div> <!-- End Body -->
+
+    <footer style="background-color: #F5F5F5;" > <!-- Footer -->
+        <div class="container">
+            <h2 class="text-center" style="padding-top: 50px;">Partners</h2>
+            <p>The companies and organizations that supported us:</p>
+        </div>
+        
+        <div class="footer-carousel">
+            <div class="carousel-wrapper">
+                <div class="carousel-track">
+                    <img src="../../images/sponsors/climaton.png" alt="climaton">
+                    <img src="../../images/sponsors/Emblem_of_the_All-China_Youth_Federation.svg.png" alt=" Youth Federation">
+                    <img src="../../images/sponsors/Escudo-UNAM-escalable.png" alt="Escudo de la UNAM">
+                    <img src="../../images/sponsors/igemstartups.jpeg" alt="igem startups">
+                    <img src="../../images/sponsors/uniceflogo.png" alt="unicef logo">
+                    <img src="../../images/sponsors/ciencias.webp" alt="Logotipo de la Facultad de Ciencias de la UNAM">
+                    <!-- Repetimos las mismas imágenes para efecto de bucle -->
+                    <img src="../../images/sponsors/climaton.png" alt="climaton">
+                    <img src="../../images/sponsors/Emblem_of_the_All-China_Youth_Federation.svg.png" alt=" Youth Federation">
+                    <img src="../../images/sponsors/Escudo-UNAM-escalable.png" alt="Escudo de la UNAM">
+                    <img src="../../images/sponsors/igemstartups.jpeg" alt="igem startups">
+                    <img src="../../images/sponsors/uniceflogo.png" alt="unicef logo">
+                    <img src="../../images/sponsors/ciencias.webp" alt="Logotipo de la Facultad de Ciencias de la UNAM">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/bootstrap.js"></script>
+</body>
+</html>
